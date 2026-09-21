@@ -59,25 +59,25 @@ export default function Home() {
           "imggt1 (11).webp",
           "imggt1 (12).webp"
         ]}
-        cardClassName="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[280px] relative rounded-2xl overflow-hidden shadow-xs border border-slate-200 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-200 group p-4"
+        cardClassName="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[280px] relative rounded-2xl overflow-hidden shadow-xs border border-slate-200 bg-white hover:border-indigo-300 hover:shadow-md transition-all duration-200 group p-4"
         imageClassName="object-contain rounded-xl"
       />
 
       {/* Comprehensive SEO Interlinking Bar */}
       <div className="w-full bg-slate-50/60 py-8 px-4 text-center border-y border-slate-200/70 relative z-20">
         <p className="text-center text-sm md:text-base text-slate-700 max-w-4xl mx-auto font-medium leading-relaxed mb-3">
-          Explore the complete <Link prefetch={false} className="font-bold text-blue-600 hover:underline" href="/channels">50,000+ Reflexsat IPTV Channel List</Link>, choose an affordable <Link prefetch={false} className="font-bold text-blue-600 hover:underline" href="/pricing">Subscription Plan</Link>, or follow our <Link prefetch={false} className="font-bold text-blue-600 hover:underline" href="/installation">Installation Guide</Link> to start streaming in under 5 minutes.
+          Explore the complete <Link prefetch={false} className="font-bold text-indigo-600 hover:underline" href="/channels">50,000+ OREXETV Channel List</Link>, choose an affordable <Link prefetch={false} className="font-bold text-indigo-600 hover:underline" href="/pricing">OrexeTV Subscription Plan</Link>, or follow our <Link prefetch={false} className="font-bold text-indigo-600 hover:underline" href="/installation">Installation Guide</Link> to activate your <span className="font-semibold text-slate-900">OREXETV IPTV</span> connection in under 5 minutes.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-bold text-slate-500">
-          <Link href="/how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
+          <Link href="/how-it-works" className="hover:text-indigo-600 transition-colors">How It Works</Link>
           <span>·</span>
-          <Link href="/reseller" className="hover:text-blue-600 transition-colors">Reseller Panel Credits</Link>
+          <Link href="/reseller" className="hover:text-indigo-600 transition-colors">Reseller Panel Credits</Link>
           <span>·</span>
-          <Link href="/blog" className="hover:text-blue-600 transition-colors">Streaming Guides &amp; Blog</Link>
+          <Link href="/blog" className="hover:text-indigo-600 transition-colors">Streaming Guides &amp; Blog</Link>
           <span>·</span>
-          <Link href="/faq" className="hover:text-blue-600 transition-colors">Frequently Asked Questions</Link>
+          <Link href="/faq" className="hover:text-indigo-600 transition-colors">Frequently Asked Questions</Link>
           <span>·</span>
-          <Link href="/contact" className="hover:text-blue-600 transition-colors">24/7 VIP Support Desk</Link>
+          <Link href="/contact" className="hover:text-indigo-600 transition-colors">24/7 VIP Support Desk</Link>
         </div>
       </div>
 
@@ -89,9 +89,9 @@ export default function Home() {
       <div className="w-full bg-white py-12 border-b border-slate-200/70 relative z-10 flex justify-center px-4">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/reflexsat-devices-banner.webp"
-          alt="Reflexsat IPTV 4K streaming supported across Firestick, Apple TV, Smart TV, Android, iOS, Windows and MAG devices"
-          title="Reflexsat IPTV Multi-Screen Device Compatibility"
+          src="/orexetv-devices-banner.webp"
+          alt="Orexetv 4K streaming supported across Firestick, Apple TV, Smart TV, Android, iOS, Windows and MAG devices"
+          title="Orexetv Multi-Screen Device Compatibility"
           loading="lazy"
           className="max-w-full h-auto w-full md:w-[1024px] object-contain"
         />

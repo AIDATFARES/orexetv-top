@@ -27,20 +27,20 @@ export default function MovieStrips() {
     <section className="w-full overflow-hidden bg-white py-20 border-b border-slate-200/80 relative flex flex-col gap-6">
       {/* Section Header */}
       <div className="text-center mb-6 px-4 z-20">
-        <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-xs font-bold tracking-wider uppercase mb-4">
+        <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-700 text-xs font-bold tracking-wider uppercase mb-4">
           Endless Entertainment On Demand
         </span>
         <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-          Massive On-Demand <span className="text-blue-600">VOD Library</span>
+          Massive On-Demand <span className="text-indigo-600">VOD Library</span>
         </h2>
         <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
           Access over 200,000 films and series. From current Hollywood cinema and binge-worthy global series to classic favorites, all in pristine 4K and Full HD resolution with multiple subtitle tracks.
         </p>
         <Link 
           href="/channels"
-          className="btn-primary-reflex inline-flex items-center justify-center px-8 py-3.5 text-xs sm:text-sm font-bold tracking-wider uppercase"
+          className="btn-primary-orexe inline-flex items-center justify-center px-8 py-3.5 text-xs sm:text-sm font-bold tracking-wider uppercase"
         >
-          View Reflexsat IPTV Channel List &rarr;
+          View OREXETV Channel List &rarr;
         </Link>
       </div>
 
@@ -63,11 +63,11 @@ export default function MovieStrips() {
           {[...movieImages, ...movieImages, ...movieImages].map((img, i) => {
             const cleanMovieTitle = img.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ").trim();
             return (
-              <div key={i} className="flex-shrink-0 w-[160px] h-[220px] md:w-[220px] md:h-[300px] relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all duration-200">
+              <div key={i} className="flex-shrink-0 w-[160px] h-[220px] md:w-[220px] md:h-[300px] relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:border-indigo-400 hover:shadow-md transition-all duration-200">
                 <Image 
                   src={`/movie_new/${img}`} 
-                  alt={`Watch ${cleanMovieTitle} on-demand in 4K on Reflexsat IPTV`} 
-                  title={`${cleanMovieTitle} - Reflexsat IPTV 4K VOD`}
+                  alt={`Watch ${cleanMovieTitle} on-demand in 4K on OREXETV`} 
+                  title={`${cleanMovieTitle} - OREXETV 4K VOD`}
                   fill 
                   sizes="(max-width: 640px) 240px, 340px" 
                   className="object-cover" 

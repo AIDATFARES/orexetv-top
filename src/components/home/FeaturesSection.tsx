@@ -7,7 +7,7 @@ export default function FeaturesSection() {
     {
       icon: Monitor,
       title: "4K ULTRA HD STREAMING",
-      desc: "Enjoy every channel and live event in stunning 4K, Full HD, and 60 FPS HD. Reflexsat IPTV anti-freeze technology ensures smooth streaming on any device.",
+      desc: "Enjoy every channel and live event in stunning 4K, Full HD, and 60 FPS HD. OREXETV anti-freeze technology ensures smooth streaming on any device.",
     },
     {
       icon: Layers,
@@ -17,7 +17,7 @@ export default function FeaturesSection() {
     {
       icon: Film,
       title: "200,000+ MOVIES & SERIES",
-      desc: "Explore a massive VOD library featuring the latest movies, hit series, and documentaries—available on demand with your Reflexsat IPTV subscription.",
+      desc: "Explore a massive VOD library featuring the latest movies, hit series, and documentaries—available on demand with your OREXETV subscription.",
     },
   ];
 
@@ -35,7 +35,7 @@ export default function FeaturesSection() {
     {
       icon: Globe,
       title: "Works Worldwide",
-      desc: "Enjoy Reflexsat IPTV anywhere on any standard internet connection.",
+      desc: "Enjoy OREXETV anywhere on any standard internet connection.",
     },
     {
       icon: ShieldCheck,
@@ -50,12 +50,12 @@ export default function FeaturesSection() {
 
         {/* Section Header */}
         <div className="text-center mb-14">
-          <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold tracking-wider uppercase mb-4">
+          <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold tracking-wider uppercase mb-4">
             Premium Features
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             Everything You Need for the{" "}
-            <span className="block text-blue-600">Ultimate Reflexsat IPTV Experience</span>
+            <span className="block text-indigo-600">Ultimate OREXETV Experience</span>
           </h2>
         </div>
 
@@ -66,9 +66,9 @@ export default function FeaturesSection() {
             return (
               <div
                 key={index}
-                className="bg-slate-50 rounded-2xl p-8 flex flex-col gap-4 border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-200"
+                className="bg-slate-50 rounded-2xl p-8 flex flex-col gap-4 border border-slate-200 hover:border-indigo-300 hover:shadow-md transition-all duration-200"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600">
+                <div className="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600">
                   <Icon className="w-6 h-6" strokeWidth={2} />
                 </div>
                 <h3 className="text-slate-900 font-bold text-base tracking-wide uppercase">
@@ -91,7 +91,7 @@ export default function FeaturesSection() {
                 key={index}
                 className="bg-slate-50/60 rounded-xl p-5 flex flex-col gap-2.5 border border-slate-200"
               >
-                <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                <div className="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
                   <Icon className="w-5 h-5" strokeWidth={2} />
                 </div>
                 <h3 className="text-slate-900 font-bold text-sm tracking-wide">

@@ -5,24 +5,24 @@ import TopFeatureBar from "./TopFeatureBar";
 export default function HeroSection() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/60 via-white to-slate-50/50 pt-28 pb-20 sm:pt-36 sm:pb-24 border-b border-slate-200/70">
+      <section className="relative overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-slate-50/50 pt-28 pb-20 sm:pt-36 sm:pb-24 border-b border-slate-200/70">
         {/* Subtle decorative background grid */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f015_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f015_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
 
         <div className="relative z-10 w-full max-w-[1240px] mx-auto px-5 sm:px-8 flex flex-col items-center text-center">
           {/* Top Trust Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/80 bg-blue-50/90 px-4 py-1.5 mb-8 shadow-xs">
-            <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-xs font-bold text-blue-700 tracking-wider uppercase">
-              Official 2026 Edition · Anti-Freeze 10.0
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200/80 bg-indigo-50/90 px-4 py-1.5 mb-8 shadow-xs">
+            <Sparkles className="w-4 h-4 text-indigo-600" />
+            <span className="text-xs font-bold text-indigo-700 tracking-wider uppercase">
+              Official 2026 Edition · OREXETV Ultra 4K · Anti-Freeze 10.0
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 max-w-5xl leading-[1.12]">
-            Reflexsat IPTV — <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700">
-              Premium 4K IPTV Service
+            OREXETV — <br className="hidden sm:inline" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-indigo-700 to-violet-700">
+              Next-Gen 4K IPTV Service
             </span>{" "}
             <br className="hidden sm:inline" />
             Built for Live TV, Sports & Cinema
@@ -30,9 +30,9 @@ export default function HeroSection() {
 
           {/* Subtitle with SEO Interlinks */}
           <p className="mt-6 text-base sm:text-xl text-slate-600 max-w-3xl leading-relaxed">
-            Experience ultra-smooth television with <strong className="text-slate-900 font-semibold">Reflexsat IPTV</strong>.
-            Over <Link href="/channels" className="text-blue-600 font-semibold hover:text-blue-800 underline decoration-blue-200 hover:decoration-blue-600 transition-colors">50,000 live international channels</Link>, 200,000 on-demand movies, and major pay-per-view sports events
-            powered by <Link href="/how-it-works" className="text-blue-600 font-semibold hover:text-blue-800 underline decoration-blue-200 hover:decoration-blue-600 transition-colors">anti-freeze server infrastructure</Link> and <Link href="/installation" className="text-blue-600 font-semibold hover:text-blue-800 underline decoration-blue-200 hover:decoration-blue-600 transition-colors">instant 5-minute activation</Link>.
+            Experience ultra-smooth television with <strong className="text-slate-900 font-semibold">OREXETV</strong>.
+            Over <Link href="/channels" className="text-indigo-600 font-semibold hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-600 transition-colors">50,000 live international channels</Link>, 200,000 on-demand movies, and major pay-per-view sports events
+            powered by <Link href="/how-it-works" className="text-indigo-600 font-semibold hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-600 transition-colors">anti-freeze server infrastructure</Link> and <Link href="/installation" className="text-indigo-600 font-semibold hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-600 transition-colors">instant 5-minute activation</Link>.
           </p>
 
           {/* Feature Highlights Pills */}
@@ -42,7 +42,7 @@ export default function HeroSection() {
               Ultra HD & True 4K
             </span>
             <span className="flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-xs">
-              <ShieldCheck className="w-4 h-4 text-blue-600" />
+              <ShieldCheck className="w-4 h-4 text-indigo-600" />
               Anti-Freeze 10.0 Tech
             </span>
             <span className="flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-xs">
@@ -55,12 +55,12 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 w-full sm:w-auto">
             <a
               href="#pricing"
-              className="w-full sm:w-auto btn-primary-reflex py-4 px-8 text-sm font-extrabold uppercase tracking-wider text-center"
+              className="w-full sm:w-auto btn-primary-orexe py-4 px-8 text-sm font-extrabold uppercase tracking-wider text-center"
             >
               Choose Subscription Plan
             </a>
             <a
-              href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20Reflexsat%20IPTV."
+              href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20OREXETV."
               target="_blank"
               rel="noreferrer"
               className="w-full sm:w-auto btn-whatsapp-clean py-4 px-8 text-sm font-bold flex items-center justify-center gap-2.5 uppercase tracking-wider"
@@ -73,7 +73,7 @@ export default function HeroSection() {
           </div>
 
           <p className="mt-4 text-xs text-slate-500 font-medium">
-            No credit card required for trial · Works on <Link href="/installation" className="text-slate-700 underline hover:text-blue-600">Firestick, Smart TV, Android, Apple TV & PC</Link> · Explore our <Link href="/pricing" className="text-slate-700 underline hover:text-blue-600">Pricing</Link> & <Link href="/channels" className="text-slate-700 underline hover:text-blue-600">Channels</Link>
+            No credit card required for trial · Works on <Link href="/installation" className="text-slate-700 underline hover:text-indigo-600">Firestick, Smart TV, Android, Apple TV & PC</Link> · Explore our <Link href="/pricing" className="text-slate-700 underline hover:text-indigo-600">Pricing</Link> & <Link href="/channels" className="text-slate-700 underline hover:text-indigo-600">Channels</Link>
           </p>
         </div>
       </section>

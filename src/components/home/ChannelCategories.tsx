@@ -6,7 +6,7 @@ export default function ChannelCategories() {
     {
       icon: Monitor,
       title: "4K ULTRA HD STREAMING",
-      desc: "Enjoy every channel and live event in stunning 4K, Full HD, and 60 FPS HD. Reflexsat IPTV anti-freeze technology ensures smooth, buffer-free playback on any screen.",
+      desc: "Enjoy every channel and live event in stunning 4K, Full HD, and 60 FPS HD. OREXETV anti-freeze technology ensures smooth, buffer-free playback on any screen.",
       tags: ["4K UHD", "60 FPS", "ANTI-FREEZE"],
       href: "/how-it-works",
       linkText: "Learn about our streaming technology",
@@ -58,24 +58,24 @@ export default function ChannelCategories() {
         
         {/* Heading */}
         <div className="mx-auto mb-14 max-w-4xl text-center">
-          <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 text-blue-700 font-bold text-xs tracking-wider uppercase mb-4 border border-blue-200/80">
-            Satellite-Grade Infrastructure
+          <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-4 border border-indigo-200/80">
+            Next-Gen Infrastructure
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Everything You Need for the <br className="hidden md:block" />
-            <span className="text-blue-600">Ultimate Reflexsat IPTV Experience</span>
+            <span className="text-indigo-600">Ultimate OREXETV Experience</span>
           </h2>
           <p className="mt-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
             Engineered from the ground up for stability, speed, and premium variety. Explore our{" "}
-            <Link href="/channels" className="font-semibold text-blue-600 hover:text-blue-800 underline decoration-blue-200 hover:decoration-blue-600">
+            <Link href="/channels" className="font-semibold text-indigo-600 hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-600">
               50,000+ live channel lineup
             </Link>
             , check our{" "}
-            <Link href="/pricing" className="font-semibold text-blue-600 hover:text-blue-800 underline decoration-blue-200 hover:decoration-blue-600">
+            <Link href="/pricing" className="font-semibold text-indigo-600 hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-600">
               subscription plans
             </Link>
             , or see how to{" "}
-            <Link href="/installation" className="font-semibold text-blue-600 hover:text-blue-800 underline decoration-blue-200 hover:decoration-blue-600">
+            <Link href="/installation" className="font-semibold text-indigo-600 hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-600">
               install on your device
             </Link>
             .
@@ -92,9 +92,9 @@ export default function ChannelCategories() {
               return (
                 <div 
                   key={idx} 
-                  className="flex flex-col rounded-2xl bg-slate-50/60 border border-slate-200/90 p-7 sm:p-8 hover:bg-white hover:border-blue-300 hover:shadow-md transition-all duration-200 group"
+                  className="flex flex-col rounded-2xl bg-slate-50/60 border border-slate-200/90 p-7 sm:p-8 hover:bg-white hover:border-indigo-300 hover:shadow-md transition-all duration-200 group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                     <Icon className="h-6 w-6" strokeWidth={2} />
                   </div>
                   <h3 className="mb-3 text-lg font-bold text-slate-900">{feature.title}</h3>
@@ -103,7 +103,7 @@ export default function ChannelCategories() {
                   </p>
                   <Link
                     href={feature.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 mb-5 group-hover:translate-x-1 transition-transform"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 mb-5 group-hover:translate-x-1 transition-transform"
                   >
                     <span>{feature.linkText}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -127,9 +127,9 @@ export default function ChannelCategories() {
               return (
                 <div 
                   key={idx} 
-                  className="flex flex-col rounded-xl bg-slate-50/50 border border-slate-200/80 p-5 hover:bg-white hover:border-blue-300 hover:shadow-xs transition-all duration-200 group"
+                  className="flex flex-col rounded-xl bg-slate-50/50 border border-slate-200/80 p-5 hover:bg-white hover:border-indigo-300 hover:shadow-xs transition-all duration-200 group"
                 >
-                  <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  <div className="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center mb-3 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                     <Icon className="h-5 w-5" strokeWidth={2} />
                   </div>
                   <h4 className="text-sm font-bold text-slate-900 mb-1">{feature.title}</h4>
@@ -146,11 +146,11 @@ export default function ChannelCategories() {
         {/* Interlinking Strip */}
         <div className="mt-12 text-center text-xs sm:text-sm text-slate-600">
           Ready to cut the cord?{" "}
-          <Link href="/pricing" className="font-bold text-blue-600 hover:text-blue-800 underline">
+          <Link href="/pricing" className="font-bold text-indigo-600 hover:text-indigo-800 underline">
             Compare subscription prices
           </Link>{" "}
           or discover{" "}
-          <Link href="/how-it-works" className="font-bold text-blue-600 hover:text-blue-800 underline">
+          <Link href="/how-it-works" className="font-bold text-indigo-600 hover:text-indigo-800 underline">
             how easy it is to start streaming
           </Link>
           .

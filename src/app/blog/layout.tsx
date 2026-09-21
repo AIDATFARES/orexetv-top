@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reflexsat IPTV Blog & Streaming Insights 2026",
+  title: "OREXETV Blog & Streaming Insights 2026",
   description:
-    "Explore in-depth 4K streaming tutorials, IPTV player reviews, device setup guides, and troubleshooting fixes from the Reflexsat IPTV engineering team.",
+    "Explore in-depth 4K streaming tutorials, IPTV player reviews, device setup guides, and troubleshooting fixes from the OREXETV engineering team.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Reflexsat IPTV Blog & Streaming Insights 2026",
+    title: "OREXETV Blog & Streaming Insights 2026",
     description:
-      "Explore in-depth 4K streaming tutorials, IPTV player reviews, and device setup guides from Reflexsat IPTV.",
-    url: "https://www.reflexsat-iptv4k.shop/blog",
-    siteName: "Reflexsat IPTV",
+      "Explore in-depth 4K streaming tutorials, IPTV player reviews, and device setup guides from OREXETV.",
+    url: "https://www.orexetv.top/blog",
+    siteName: "OREXETV",
     type: "website",
     images: [
       {
-        url: "/reflexsat-iptv-buying-guide.jpg",
+        url: "/orexetv-iptv-buying-guide.jpg",
         width: 1200,
         height: 630,
-        alt: "Reflexsat IPTV Blog - 4K Streaming Tutorials & Guides",
+        alt: "OREXETV Blog - 4K Streaming Tutorials & Guides",
       },
     ],
   },

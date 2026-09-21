@@ -99,29 +99,29 @@ export default function ChannelsPage() {
         
         {/* Header Banner */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/80 bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 mb-6">
-            <Radio className="w-3.5 h-3.5 text-blue-600 animate-pulse" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200/80 bg-indigo-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-indigo-700 mb-6">
+            <Radio className="w-3.5 h-3.5 text-indigo-600 animate-pulse" />
             <span>50,000+ CHANNELS · 200,000+ VODS · 150+ COUNTRIES</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Reflexsat IPTV <span className="text-blue-600">Channel Lineup</span>
+            OREXETV <span className="text-indigo-600">Channel Lineup</span>
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed">
-            Browse our expansive channel directory featuring live sports, 4K movies, international news, and complete on-demand series.
+            Browse the official Orexetv channel directory featuring live sports, 4K movies, international news, and complete on-demand series.
             All streams are powered by our{" "}
-            <Link href="/how-it-works" className="font-semibold text-blue-600 hover:text-blue-800 underline">
+            <Link href="/how-it-works" className="font-semibold text-indigo-600 hover:text-indigo-800 underline">
               anti-freeze 10.0 server network
             </Link>{" "}
             and work across all{" "}
-            <Link href="/installation" className="font-semibold text-blue-600 hover:text-blue-800 underline">
+            <Link href="/installation" className="font-semibold text-indigo-600 hover:text-indigo-800 underline">
               supported devices
             </Link>
             .
           </p>
           <p className="mt-3 text-xs sm:text-sm text-slate-500 max-w-xl mx-auto">
-            Ready to subscribe? Choose your <Link href="/pricing" className="font-semibold text-blue-600 hover:underline">subscription plan</Link> or explore our <Link href="/reseller" className="font-semibold text-blue-600 hover:underline">reseller credits</Link>.
+            Ready to subscribe? Choose your <Link href="/pricing" className="font-semibold text-indigo-600 hover:underline">subscription plan</Link> or explore our <Link href="/reseller" className="font-semibold text-indigo-600 hover:underline">reseller credits</Link>.
           </p>
         </div>
 
@@ -134,14 +134,14 @@ export default function ChannelsPage() {
               return (
                 <article
                   key={category.title}
-                  className="relative flex flex-col rounded-2xl border border-slate-200 bg-slate-50/60 p-7 hover:bg-white hover:border-blue-300 hover:shadow-md transition-all duration-200"
+                  className="relative flex flex-col rounded-2xl border border-slate-200 bg-slate-50/60 p-7 hover:bg-white hover:border-indigo-300 hover:shadow-md transition-all duration-200"
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center">
                       <Icon className="h-6 w-6" strokeWidth={2} />
                     </div>
                     {category.tag && (
-                      <span className="rounded-full bg-blue-600 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">
+                      <span className="rounded-full bg-indigo-600 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">
                         {category.tag}
                       </span>
                     )}
@@ -181,23 +181,23 @@ export default function ChannelsPage() {
         {/* CTA Bottom Box */}
         <section className="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12 text-center shadow-xs">
           <div className="max-w-2xl mx-auto">
-            <div className="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center mx-auto mb-4">
               <CirclePlay className="w-6 h-6" />
             </div>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
-              Ready to Start Streaming With Reflexsat?
+              Ready to Start Streaming With OREXETV?
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
               Order your subscription plan today and receive your playlist and Xtream Codes login credentials on WhatsApp in minutes. Need help configuring your app? Follow our{" "}
-              <Link href="/installation" className="text-blue-600 font-bold underline">
+              <Link href="/installation" className="text-indigo-600 font-bold underline">
                 device installation tutorials
               </Link>
               , browse our{" "}
-              <Link href="/faq" className="text-blue-600 font-bold underline">
+              <Link href="/faq" className="text-indigo-600 font-bold underline">
                 FAQ
               </Link>
               , or{" "}
-              <Link href="/contact" className="text-blue-600 font-bold underline">
+              <Link href="/contact" className="text-indigo-600 font-bold underline">
                 chat with 24/7 support
               </Link>
               .
@@ -205,12 +205,12 @@ export default function ChannelsPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/pricing"
-                className="btn-primary-reflex px-8 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider"
+                className="btn-primary-orexe px-8 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider"
               >
                 View Subscription Plans
               </Link>
               <a
-                href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20Reflexsat%20IPTV."
+                href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20OREXETV."
                 target="_blank"
                 rel="noreferrer"
                 className="btn-whatsapp-clean px-8 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider"

@@ -34,13 +34,13 @@ export default function BrandMarquee({
           return (
             <div 
               key={i} 
-              className={cardClassName || "flex-shrink-0 w-[100px] h-[52px] md:w-[130px] md:h-[64px] relative bg-white border border-slate-200 rounded-2xl p-2.5 hover:border-blue-300 hover:shadow-xs transition-all duration-150"}
+              className={cardClassName || "flex-shrink-0 w-[100px] h-[52px] md:w-[130px] md:h-[64px] relative bg-white border border-slate-200 rounded-2xl p-2.5 hover:border-indigo-300 hover:shadow-xs transition-all duration-150"}
             >
               <div className="relative w-full h-full overflow-hidden rounded-xl">
                 <Image 
                   src={`/${imagesFolder}/${brand}`} 
-                  alt={`Watch ${cleanBrandName} live in 4K on Reflexsat IPTV`} 
-                  title={`${cleanBrandName} - Reflexsat IPTV Live Stream`}
+                  alt={`Watch ${cleanBrandName} live in 4K on OREXETV`} 
+                  title={`${cleanBrandName} - OREXETV Live Stream`}
                   fill
                   sizes="(max-width: 640px) 100px, (max-width: 1024px) 130px, 150px"
                   className={imageClassName || "object-contain rounded-lg"}

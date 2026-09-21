@@ -13,7 +13,7 @@ export default function LatestArticlesSection() {
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-14 max-w-3xl mx-auto">
-          <span className="inline-block py-1 px-4 rounded-full bg-[#36a9ff]/10 border border-[#36a9ff]/30 text-[#36a9ff] text-xs font-bold tracking-widest uppercase mb-4">
+          <span className="inline-block py-1 px-4 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold tracking-widest uppercase mb-4">
             Guides & News
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-black tracking-tight mb-4">
@@ -27,15 +27,15 @@ export default function LatestArticlesSection() {
         <div className={`grid gap-8 mb-14 ${displayPosts.length === 1 ? 'grid-cols-1 max-w-lg mx-auto' : displayPosts.length === 2 ? 'grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
           {displayPosts.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.id}>
-              <article className="bg-white rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-2 transition-all duration-300 h-full border border-black/10 hover:border-[#36a9ff]/50">
+              <article className="bg-white rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-2 transition-all duration-300 h-full border border-black/10 hover:border-indigo-500/50">
                 <div className="h-48 relative overflow-hidden shrink-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    alt={`${post.title} - Reflexsat IPTV Streaming Guide`}
-                    title={`${post.title} | Reflexsat IPTV`}
+                    alt={`${post.title} - OREXETV Streaming Guide`}
+                    title={`${post.title} | OREXETV`}
                     loading="lazy"
-                    src={post.coverImage || "/blog/reflexsat-blog-default.webp"}
+                    src={post.coverImage || "/blog/orexetv-blog-default.webp"}
                   />
                   <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#141414] to-transparent"></div>
                   <span className="absolute top-4 left-4 px-3 py-1 bg-white backdrop-blur-md text-black rounded-full text-xs font-bold border border-black/10">
@@ -43,7 +43,7 @@ export default function LatestArticlesSection() {
                   </span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-bold leading-snug text-black group-hover:text-[#36a9ff] transition-colors mb-3 line-clamp-2">
+                  <h3 className="text-lg font-bold leading-snug text-black group-hover:text-indigo-600 transition-colors mb-3 line-clamp-2">
                     {post.title}
                   </h3>
                   <p className="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow leading-relaxed">
@@ -51,7 +51,7 @@ export default function LatestArticlesSection() {
                   </p>
                   <div className="mt-auto text-gray-600 text-xs font-medium flex items-center justify-between border-t border-black/10 pt-4">
                     <span>{post.date}</span>
-                    <span className="flex items-center text-[#36a9ff] group-hover:translate-x-1 transition-transform font-bold text-sm">
+                    <span className="flex items-center text-indigo-600 group-hover:translate-x-1 transition-transform font-bold text-sm">
                       Read More
                       <ArrowRight className="w-4 h-4 ml-1" />
                     </span>
@@ -64,7 +64,7 @@ export default function LatestArticlesSection() {
 
         <div className="text-center">
           <Link href="/blog">
-            <button className="bg-black/5 hover:bg-[#36a9ff] text-white border border-black/15 hover:border-[#36a9ff] px-8 py-3.5 rounded-full font-bold text-sm transition-all duration-300 flex items-center justify-center mx-auto gap-2">
+            <button className="bg-slate-900 hover:bg-indigo-600 text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all duration-300 flex items-center justify-center mx-auto gap-2">
               View All Articles
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>

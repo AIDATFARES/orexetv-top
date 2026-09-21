@@ -7,34 +7,34 @@ export default function Contact() {
   return (
     <main className="flex-grow pt-24 pb-24 px-6 md:px-12 max-w-[1300px] mx-auto w-full relative z-10 bg-white">
       <div className="mx-auto mb-14 max-w-3xl text-center">
-        <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 border border-blue-200 text-blue-700 font-bold text-xs tracking-wider uppercase mb-4">
+        <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-4">
           Direct Customer Care
         </span>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
-          Get in Touch with <span className="text-blue-600">Reflexsat Support</span>
+          Get in Touch with <span className="text-indigo-600">OREXETV Support</span>
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 leading-relaxed">
-          Need help <Link href="/pricing" className="text-blue-600 font-semibold hover:underline">choosing a package</Link>,{" "}
-          <Link href="/installation" className="text-blue-600 font-semibold hover:underline">setting up your device</Link>, or exploring our{" "}
-          <Link href="/channels" className="text-blue-600 font-semibold hover:underline">channel lineup</Link>?
-          You can also consult our <Link href="/faq" className="text-blue-600 font-semibold hover:underline">FAQ knowledge base</Link> or reach out directly below.
+          Need help <Link href="/pricing" className="text-indigo-600 font-semibold hover:underline">choosing a package</Link>,{" "}
+          <Link href="/installation" className="text-indigo-600 font-semibold hover:underline">setting up your device</Link>, or exploring our{" "}
+          <Link href="/channels" className="text-indigo-600 font-semibold hover:underline">channel lineup</Link>?
+          You can also consult our <Link href="/faq" className="text-indigo-600 font-semibold hover:underline">FAQ knowledge base</Link> or reach out directly below.
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
         {/* Contact Info Sidebar */}
         <div className="lg:col-span-4 flex flex-col gap-4">
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center hover:bg-white hover:border-blue-300 hover:shadow-xs transition-all">
-            <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-4">
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center hover:bg-white hover:border-indigo-300 hover:shadow-xs transition-all">
+            <div className="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mx-auto mb-4">
               <Mail className="w-6 h-6" />
             </div>
             <h3 className="font-bold text-lg text-slate-900 mb-1">Email Support</h3>
             <p className="text-xs text-slate-500 mb-4">For billing inquiries and general support.</p>
             <a
-              className="text-xs sm:text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors break-all"
-              href="mailto:support@reflexsat-iptv4k.shop"
+              className="text-xs sm:text-sm font-bold text-indigo-600 hover:text-indigo-800 transition-colors break-all"
+              href="mailto:support@orexetv.top"
             >
-              support@reflexsat-iptv4k.shop
+              support@orexetv.top
             </a>
           </div>
 
@@ -51,7 +51,7 @@ export default function Contact() {
             </p>
             <a
               className="btn-whatsapp-clean inline-flex items-center gap-2 px-6 py-2.5 text-xs font-bold uppercase tracking-wider"
-              href="https://wa.me/447882781998?text=Hello,%20I%20need%20support%20for%20Reflexsat%20IPTV."
+              href="https://wa.me/447882781998?text=Hello,%20I%20need%20support%20for%20OREXETV."
               target="_blank"
               rel="noreferrer"
             >
@@ -82,7 +82,7 @@ export default function Contact() {
               const name = (form.elements.namedItem('name') as HTMLInputElement)?.value || '';
               const subject = (form.elements.namedItem('subject') as HTMLInputElement)?.value || '';
               const msg = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value || '';
-              const prompt = `Hello Reflexsat support,\n\nName: ${name}\nSubject: ${subject}\n\n${msg}`;
+              const prompt = `Hello OREXETV support,\n\nName: ${name}\nSubject: ${subject}\n\n${msg}`;
               window.open(`https://wa.me/447882781998?text=${encodeURIComponent(prompt)}`, "_blank");
             }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -92,7 +92,7 @@ export default function Contact() {
                   </label>
                   <input
                     required
-                    className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all"
+                    className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-indigo-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all"
                     id="name"
                     name="name"
                     placeholder="e.g. Alex Smith"
@@ -105,7 +105,7 @@ export default function Contact() {
                   </label>
                   <input
                     required
-                    className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all"
+                    className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-indigo-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all"
                     id="email"
                     name="email"
                     placeholder="alex@example.com"
@@ -120,7 +120,7 @@ export default function Contact() {
                 </label>
                 <input
                   required
-                  className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all"
+                  className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-indigo-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all"
                   id="subject"
                   name="subject"
                   placeholder="e.g. Firestick 4K Setup or Free Trial Request"
@@ -134,7 +134,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   required
-                  className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all resize-none"
+                  className="border border-slate-200 bg-slate-50 focus:bg-white focus:border-indigo-600 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all resize-none"
                   id="message"
                   name="message"
                   placeholder="Tell us what device you use or any question you have..."
@@ -144,7 +144,7 @@ export default function Contact() {
 
               <div className="mt-2 flex justify-end">
                 <button
-                  className="btn-primary-reflex px-8 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider flex items-center gap-2"
+                  className="btn-primary-orexe px-8 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider flex items-center gap-2"
                   type="submit"
                 >
                   <span>Send Message via WhatsApp Desk</span>
@@ -162,15 +162,15 @@ export default function Contact() {
           Looking for quick answers? Check our self-service resources:
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-slate-600">
-          <Link href="/installation" className="text-blue-600 hover:underline">Device Setup Tutorials</Link>
+          <Link href="/installation" className="text-indigo-600 hover:underline">Device Setup Tutorials</Link>
           <span>·</span>
-          <Link href="/pricing" className="text-blue-600 hover:underline">Subscription Packages</Link>
+          <Link href="/pricing" className="text-indigo-600 hover:underline">Subscription Packages</Link>
           <span>·</span>
-          <Link href="/channels" className="text-blue-600 hover:underline">50,000+ Channels List</Link>
+          <Link href="/channels" className="text-indigo-600 hover:underline">50,000+ Channels List</Link>
           <span>·</span>
-          <Link href="/refund-policy" className="text-blue-600 hover:underline">Refund Policy</Link>
+          <Link href="/refund-policy" className="text-indigo-600 hover:underline">Refund Policy</Link>
           <span>·</span>
-          <Link href="/faq" className="text-blue-600 hover:underline">Full FAQ</Link>
+          <Link href="/faq" className="text-indigo-600 hover:underline">Full FAQ</Link>
         </div>
       </div>
     </main>

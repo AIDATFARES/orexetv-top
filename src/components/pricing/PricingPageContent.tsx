@@ -22,7 +22,7 @@ type Plan = {
 };
 
 const commonFeatures: PlanFeature[] = [
-  { text: "Reflexsat IPTV subscription for {devices} Device{s}", included: true },
+  { text: "OREXETV subscription for {devices} Device{s}", included: true },
   { text: "Uncompressed Ultra HD & True 4K", included: true },
   { text: "50,000+ Premium Live Channels", included: true },
   { text: "200,000+ VODs (Updated Daily)", included: true },
@@ -65,19 +65,19 @@ const plans: Plan[] = [
 ];
 
 const includedFeatures = [
-  { icon: Tv, title: "+50,000 Channels", text: <>Explore live channels from around the world, including 4K sports, news and entertainment in our <Link href="/channels" className="text-blue-600 font-semibold hover:underline">channel lineup</Link>.</> },
-  { icon: MonitorSmartphone, title: "200,000+ VODs", text: <>Enjoy a massive, regularly updated catalog of movies and series on all <Link href="/installation" className="text-blue-600 font-semibold hover:underline">supported devices</Link>.</> },
-  { icon: Zap, title: "Anti-Freeze 10.0", text: <>Optimized server technology ensures zero buffering even during peak global sporting events. Learn <Link href="/how-it-works" className="text-blue-600 font-semibold hover:underline">how it works</Link>.</> },
-  { icon: Headphones, title: "24/7 VIP Support", text: <>The Reflexsat support team is ready to assist with setup and streaming questions on WhatsApp via our <Link href="/contact" className="text-blue-600 font-semibold hover:underline">support desk</Link>.</> },
-  { icon: Sparkles, title: "Fast Activation", text: <>Your Reflexsat IPTV details are delivered instantly. Follow our <Link href="/installation" className="text-blue-600 font-semibold hover:underline">installation guides</Link> to get started in minutes.</> },
+  { icon: Tv, title: "+50,000 Channels", text: <>Explore live channels from around the world, including 4K sports, news and entertainment in our <Link href="/channels" className="text-indigo-600 font-semibold hover:underline">channel lineup</Link>.</> },
+  { icon: MonitorSmartphone, title: "200,000+ VODs", text: <>Enjoy a massive, regularly updated catalog of movies and series on all <Link href="/installation" className="text-indigo-600 font-semibold hover:underline">supported devices</Link>.</> },
+  { icon: Zap, title: "Anti-Freeze 10.0", text: <>Optimized server technology ensures zero buffering even during peak global sporting events. Learn <Link href="/how-it-works" className="text-indigo-600 font-semibold hover:underline">how it works</Link>.</> },
+  { icon: Headphones, title: "24/7 VIP Support", text: <>The OREXETV support team is ready to assist with setup and streaming questions on WhatsApp via our <Link href="/contact" className="text-indigo-600 font-semibold hover:underline">support desk</Link>.</> },
+  { icon: Sparkles, title: "Fast Activation", text: <>Your OREXETV details are delivered instantly. Follow our <Link href="/installation" className="text-indigo-600 font-semibold hover:underline">installation guides</Link> to get started in minutes.</> },
   { icon: CreditCard, title: "TV Guide (EPG)", text: "Accurate electronic program guides with catch-up functionality on supported players." },
 ];
 
 const billingQuestions = [
-  { question: "1. Which payment methods are accepted?", answer: <>We accept credit/debit cards, PayPal, and major cryptocurrencies (Bitcoin, USDT). <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/contact">Contact Reflexsat support</Link> if you need guidance before ordering.</> },
-  { question: "2. Is my order protected?", answer: <>Yes. All transactions are securely processed with 256-bit SSL encryption and backed by our <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/refund-policy">refund policy</Link>. We never store payment card credentials.</> },
-  { question: "3. Will my subscription auto-renew?", answer: <>No surprise rebills. Subscriptions are prepaid. You will receive an optional reminder before your plan expires so you can easily renew on your terms. Have questions? See our <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/faq">FAQ</Link>.</> },
-  { question: "4. Can I upgrade my plan or add extra connections later?", answer: <>Yes. <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/contact">Contact our support team on WhatsApp</Link> at any time and we will upgrade your account seamlessly.</> },
+  { question: "1. Which payment methods are accepted?", answer: <>We accept credit/debit cards, PayPal, and major cryptocurrencies (Bitcoin, USDT). <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/contact">Contact OREXETV support</Link> if you need guidance before ordering.</> },
+  { question: "2. Is my order protected?", answer: <>Yes. All transactions are securely processed with 256-bit SSL encryption and backed by our <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/refund-policy">refund policy</Link>. We never store payment card credentials.</> },
+  { question: "3. Will my subscription auto-renew?", answer: <>No surprise rebills. Subscriptions are prepaid. You will receive an optional reminder before your plan expires so you can easily renew on your terms. Have questions? See our <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/faq">FAQ</Link>.</> },
+  { question: "4. Can I upgrade my plan or add extra connections later?", answer: <>Yes. <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/contact">Contact our support team on WhatsApp</Link> at any time and we will upgrade your account seamlessly.</> },
 ];
 
 const planComparison = [
@@ -98,7 +98,7 @@ export default function PricingPageContent() {
 
   function handleOrder(plan: Plan) {
     const text = encodeURIComponent(
-      `Hello! I would like to order the Reflexsat IPTV ${plan.name} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
+      `Hello! I would like to order the OREXETV ${plan.name} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
     );
     window.open(`https://wa.me/447882781998?text=${text}`, "_blank", "noopener,noreferrer");
   }
@@ -109,20 +109,20 @@ export default function PricingPageContent() {
         
         {/* Header */}
         <header className="mx-auto max-w-3xl text-center mb-16">
-          <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200/80 px-4 py-1 mb-5">
-            <Gift className="h-4 w-4 text-blue-600" />
-            <span className="text-[11px] font-bold text-blue-700 tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 border border-indigo-200/80 px-4 py-1 mb-5">
+            <Gift className="h-4 w-4 text-indigo-600" />
+            <span className="text-[11px] font-bold text-indigo-700 tracking-wider uppercase">
               TRANSPARENT PRICING · NO CONTRACTS
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
-            Reflexsat IPTV <span className="text-blue-600">Subscription Plans</span>
+            OREXETV <span className="text-indigo-600">Subscription Plans</span>
           </h1>
           <p className="mx-auto mt-4 text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
             Choose your preferred subscription duration with uncompressed 4K streaming and zero long-term commitments.
           </p>
           <p className="mx-auto mt-2 max-w-2xl text-xs sm:text-sm text-slate-500">
-            Need guidance? Check our <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/installation">setup guide</Link>, view our <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/channels">channel lineup</Link>, learn <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/how-it-works">how it works</Link>, or explore <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/reseller">reseller panel credits</Link>.
+            Need guidance? Check our <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/installation">setup guide</Link>, view our <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/channels">channel lineup</Link>, learn <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/how-it-works">how it works</Link>, or explore <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/reseller">reseller panel credits</Link>.
           </p>
         </header>
 
@@ -130,7 +130,7 @@ export default function PricingPageContent() {
         <div className="mx-auto mb-14 max-w-md w-full">
           <div className="flex flex-col items-center gap-2.5 w-full">
             <div className="flex items-center gap-2">
-              <Tv className="h-4 w-4 text-blue-600" />
+              <Tv className="h-4 w-4 text-indigo-600" />
               <p className="text-xs font-bold uppercase tracking-wider text-slate-600">Simultaneous Devices</p>
             </div>
             <div className="grid grid-cols-3 gap-2 w-full p-1.5 bg-slate-50 rounded-full border border-slate-200">
@@ -143,7 +143,7 @@ export default function PricingPageContent() {
                     type="button"
                     className={`rounded-full py-2.5 px-2 text-xs sm:text-sm font-bold transition-all uppercase tracking-wide text-center whitespace-nowrap ${
                       selected
-                        ? "bg-blue-600 text-white shadow-xs"
+                        ? "bg-indigo-600 text-white shadow-xs"
                         : "text-slate-600 hover:text-slate-900 hover:bg-white"
                     }`}
                   >
@@ -164,14 +164,14 @@ export default function PricingPageContent() {
                 key={plan.id}
                 className={`relative flex flex-col rounded-3xl bg-white p-8 text-left transition-all duration-200 ${
                   isPopular
-                    ? "border-2 border-blue-600 shadow-xl md:-translate-y-2"
+                    ? "border-2 border-indigo-600 shadow-xl md:-translate-y-2"
                     : "border border-slate-200 shadow-sm hover:border-slate-300 hover:shadow-md"
                 }`}
               >
                 {/* Badge */}
                 {isPopular ? (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-600 px-4 py-1 text-[11px] font-extrabold uppercase tracking-widest text-white shadow-sm">
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-indigo-600 px-4 py-1 text-[11px] font-extrabold uppercase tracking-widest text-white shadow-sm">
                       <Sparkles className="w-3.5 h-3.5" />
                       {plan.badge}
                     </span>
@@ -215,7 +215,7 @@ export default function PricingPageContent() {
                   type="button"
                   onClick={() => handleOrder(plan)}
                   className={`w-full py-4 text-xs sm:text-sm font-extrabold uppercase tracking-wider transition-all duration-200 rounded-full ${
-                    isPopular ? "btn-primary-reflex" : "btn-secondary-reflex"
+                    isPopular ? "btn-primary-orexe" : "btn-secondary-orexe"
                   }`}
                 >
                   {plan.buttonText}
@@ -226,20 +226,20 @@ export default function PricingPageContent() {
         </div>
 
         {/* Free Trial Banner */}
-        <div className="mx-auto mt-16 max-w-2xl flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl bg-blue-50/60 p-6 sm:px-8 border border-blue-200/80 shadow-xs">
+        <div className="mx-auto mt-16 max-w-2xl flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl bg-indigo-50/60 p-6 sm:px-8 border border-indigo-200/80 shadow-xs">
           <div className="flex items-center gap-3.5">
-            <div className="bg-blue-600 p-2.5 rounded-xl text-white">
+            <div className="bg-indigo-600 p-2.5 rounded-xl text-white">
               <Gift className="h-5 w-5" />
             </div>
             <div>
               <h3 className="text-base font-bold text-slate-900">
-                Want to test Reflexsat IPTV first?
+                Want to test OREXETV first?
               </h3>
               <p className="text-xs text-slate-600">Request a free 24-hour trial with instant activation.</p>
             </div>
           </div>
           <a
-            href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%2024H%20trial%20for%20Reflexsat%20IPTV."
+            href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%2024H%20trial%20for%20OREXETV."
             target="_blank"
             rel="noreferrer"
             className="btn-whatsapp-clean px-6 py-3 text-xs uppercase tracking-wider font-extrabold whitespace-nowrap"
@@ -251,11 +251,11 @@ export default function PricingPageContent() {
         {/* Plan Comparison Table */}
         <div className="mt-24 max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 text-blue-700 font-bold text-xs tracking-wider uppercase mb-3 border border-blue-200/80">
+            <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-3 border border-indigo-200/80">
               Detailed Plan Specs
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Compare <span className="text-blue-600">Reflexsat Plans</span>
+              Compare <span className="text-indigo-600">OREXETV Plans</span>
             </h2>
           </div>
 
@@ -266,7 +266,7 @@ export default function PricingPageContent() {
                   <tr className="bg-slate-50 border-b border-slate-200 text-xs font-bold uppercase tracking-wider text-slate-500">
                     <th className="py-4 px-6">Feature</th>
                     <th className="py-4 px-6 text-center">3 Months</th>
-                    <th className="py-4 px-6 text-center bg-blue-50/70 text-blue-700 border-x border-blue-200/70">12 Months</th>
+                    <th className="py-4 px-6 text-center bg-indigo-50/70 text-indigo-700 border-x border-indigo-200/70">12 Months</th>
                     <th className="py-4 px-6 text-center">6 Months</th>
                   </tr>
                 </thead>
@@ -275,7 +275,7 @@ export default function PricingPageContent() {
                     <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-slate-50/30"}>
                       <td className="py-4 px-6 font-semibold text-slate-900">{row.feature}</td>
                       <td className="py-4 px-6 text-center text-slate-600">{row.m3}</td>
-                      <td className="py-4 px-6 text-center font-bold text-blue-700 bg-blue-50/40 border-x border-blue-200/50">{row.m12}</td>
+                      <td className="py-4 px-6 text-center font-bold text-indigo-700 bg-indigo-50/40 border-x border-indigo-200/50">{row.m12}</td>
                       <td className="py-4 px-6 text-center text-slate-600">{row.m6}</td>
                     </tr>
                   ))}
@@ -289,7 +289,7 @@ export default function PricingPageContent() {
         <section className="mt-24">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Included With Every <span className="text-blue-600">Reflexsat Subscription</span>
+              Included With Every <span className="text-indigo-600">OREXETV Subscription</span>
             </h2>
           </div>
 
@@ -297,9 +297,9 @@ export default function PricingPageContent() {
             {includedFeatures.map(({ icon: Icon, title, text }) => (
               <div
                 key={title}
-                className="bg-slate-50/60 rounded-2xl p-6 border border-slate-200 hover:bg-white hover:border-blue-300 hover:shadow-xs transition-all duration-200"
+                className="bg-slate-50/60 rounded-2xl p-6 border border-slate-200 hover:bg-white hover:border-indigo-300 hover:shadow-xs transition-all duration-200"
               >
-                <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+                <div className="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4">
                   <Icon className="w-5 h-5" strokeWidth={2} />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">{title}</h3>
@@ -318,7 +318,7 @@ export default function PricingPageContent() {
             {billingQuestions.map((item) => (
               <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs" key={item.question}>
                 <div className="flex items-start gap-3 mb-3">
-                  <HelpCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                  <HelpCircle className="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" />
                   <h3 className="text-sm sm:text-base font-bold text-slate-900">
                     {item.question}
                   </h3>
@@ -332,8 +332,8 @@ export default function PricingPageContent() {
         </section>
 
         <div className="mt-16 flex items-center justify-center gap-2 text-xs sm:text-sm text-slate-500">
-          <ShieldCheck className="h-4 w-4 text-blue-600" />
-          <span>Secure checkout with 256-bit SSL encryption · 24/7 Reflexsat IPTV WhatsApp VIP Support</span>
+          <ShieldCheck className="h-4 w-4 text-indigo-600" />
+          <span>Secure checkout with 256-bit SSL encryption · 24/7 OREXETV WhatsApp VIP Support</span>
         </div>
       </div>
     </section>

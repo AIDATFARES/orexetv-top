@@ -6,15 +6,15 @@ export default function WhatsAppButton() {
       {/* Tooltip Bubble */}
       <div className="relative bg-white text-slate-800 border border-slate-200/90 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-md flex items-center gap-2">
         <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
-        <span>Chat with Reflexsat support</span>
+        <span>Chat with OREXETV support</span>
       </div>
       
       {/* WhatsApp Icon Button */}
       <a
-        href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20or%20ask%20a%20question%20about%20Reflexsat%20IPTV."
+        href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20or%20ask%20a%20question%20about%20OREXETV."
         target="_blank"
         rel="noreferrer"
-        aria-label="Chat with Reflexsat IPTV on WhatsApp"
+        aria-label="Chat with OREXETV on WhatsApp"
         className="relative bg-[#25D366] hover:bg-[#20bd5a] text-white p-3.5 rounded-full shadow-lg shadow-emerald-600/25 hover:scale-105 transition-all duration-200 flex items-center justify-center"
       >
         <svg className="h-7 w-7 fill-white" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">

@@ -6,19 +6,19 @@ import { useState } from "react";
 
 const devices = [
   { id: "smart-tv", label: "Smart TV", icon: Monitor, title: "Smart TV Setup (Samsung, LG, Sony, etc.)", app: "IBO Player, Smart IPTV, or IPTV Smarters Pro", note: "Samsung Tizen TVs commonly use IBO Player or Smart IPTV, while LG webOS TVs support IPTV Smarters Pro and IBO Player." },
-  { id: "firestick", label: "Firestick", icon: Tv, title: "Amazon Firestick 4K Setup", app: "TiviMate or IPTV Smarters Pro", note: "Download Downloader from the Amazon Appstore, install your favorite player (TiviMate recommended), and sign in using your Reflexsat IPTV credentials." },
+  { id: "firestick", label: "Firestick", icon: Tv, title: "Amazon Firestick 4K Setup", app: "TiviMate or IPTV Smarters Pro", note: "Download Downloader from the Amazon Appstore, install your favorite player (TiviMate recommended), and sign in using your OREXETV credentials." },
   { id: "android", label: "Android TV & Box", icon: Smartphone, title: "Android TV & Android Box Setup", app: "TiviMate or IPTV Smarters Pro", note: "Install your player from the Google Play Store and enter the Xtream Codes API details supplied in your welcome message." },
   { id: "ios", label: "iOS (iPhone & iPad)", icon: Apple, title: "Apple iOS Setup", app: "IPTV Smarters Player or GSE Smart IPTV", note: "Install a compatible player from the Apple App Store and enter the server details from your welcome message." },
-  { id: "mag", label: "MAG Device", icon: Box, title: "MAG Box Setup", app: "Portal URL", note: "Provide your MAG MAC address (00:1A:79:...) to Reflexsat support on WhatsApp so we can authorize your portal before you connect." },
+  { id: "mag", label: "MAG Device", icon: Box, title: "MAG Box Setup", app: "Portal URL", note: "Provide your MAG MAC address (00:1A:79:...) to OREXETV support on WhatsApp so we can authorize your portal before you connect." },
   { id: "enigma", label: "Enigma2 & PC", icon: Satellite, title: "Enigma2 & Windows/Mac Setup", app: "VLC Player, IPTV Smarters PC or XtreamTV", note: "Use the M3U playlist file in VLC or enter your Xtream Codes parameters into the desktop IPTV player." },
 ];
 
 const faqs = [
-  { question: "1. How do I configure Reflexsat IPTV on a Smart TV?", answer: <>Install a player application such as IBO Player or IPTV Smarters from your TV&apos;s app store. Open the app and input the M3U playlist URL or Xtream Codes credentials (Server, Username, Password) from your <Link href="/pricing" className="text-blue-600 font-semibold hover:underline">welcome email</Link>.</> },
-  { question: "2. Where do I find my M3U URL and Xtream credentials?", answer: <>Your connection credentials are sent to your WhatsApp and email immediately after checkout. <Link href="/contact" className="text-blue-600 font-semibold hover:underline">Contact our support desk</Link> if you need them resent.</> },
-  { question: "3. How can I ensure zero buffering during live sports?", answer: <>We recommend connecting your streaming device via Ethernet cable where possible, or using 5GHz Wi-Fi with at least 25 Mbps download speed. Our streams run on <Link href="/how-it-works" className="text-blue-600 font-semibold hover:underline">anti-freeze 10.0 servers</Link> designed for peak traffic.</> },
-  { question: "4. How do I set up Reflexsat IPTV using Xtream Codes API?", answer: <>Choose &apos;Login with Xtream Codes API&apos; inside your player. Enter any name, then copy the Server URL, Username, and Password provided with your <Link href="/pricing" className="text-blue-600 font-semibold hover:underline">Reflexsat plan</Link>.</> },
-  { question: "5. Can I connect using a MAC address (Portal URL)?", answer: <>Yes. MAG boxes and STB emulators can be activated using their MAC address. Message our <Link href="/contact" className="text-blue-600 font-semibold hover:underline">support team on WhatsApp</Link> to bind your device.</> },
+  { question: "1. How do I configure OREXETV on a Smart TV?", answer: <>Install a player application such as IBO Player or IPTV Smarters from your TV&apos;s app store. Open the app and input the M3U playlist URL or Xtream Codes credentials (Server, Username, Password) from your <Link href="/pricing" className="text-indigo-600 font-semibold hover:underline">welcome email</Link>.</> },
+  { question: "2. Where do I find my M3U URL and Xtream credentials?", answer: <>Your connection credentials are sent to your WhatsApp and email immediately after checkout. <Link href="/contact" className="text-indigo-600 font-semibold hover:underline">Contact our support desk</Link> if you need them resent.</> },
+  { question: "3. How can I ensure zero buffering during live sports?", answer: <>We recommend connecting your streaming device via Ethernet cable where possible, or using 5GHz Wi-Fi with at least 25 Mbps download speed. Our streams run on <Link href="/how-it-works" className="text-indigo-600 font-semibold hover:underline">anti-freeze 10.0 servers</Link> designed for peak traffic.</> },
+  { question: "4. How do I set up OREXETV using Xtream Codes API?", answer: <>Choose &apos;Login with Xtream Codes API&apos; inside your player. Enter any name, then copy the Server URL, Username, and Password provided with your <Link href="/pricing" className="text-indigo-600 font-semibold hover:underline">OREXETV plan</Link>.</> },
+  { question: "5. Can I connect using a MAC address (Portal URL)?", answer: <>Yes. MAG boxes and STB emulators can be activated using their MAC address. Message our <Link href="/contact" className="text-indigo-600 font-semibold hover:underline">support team on WhatsApp</Link> to bind your device.</> },
 ];
 
 export default function DeviceSetupGuide() {
@@ -46,8 +46,8 @@ export default function DeviceSetupGuide() {
             <button 
               className={`inline-flex items-center gap-2 rounded-full border px-5 py-2 text-xs sm:text-sm font-semibold transition-all ${
                 active 
-                  ? "border-blue-600 bg-blue-600 text-white shadow-xs" 
-                  : "border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:text-blue-600"
+                  ? "border-indigo-600 bg-indigo-600 text-white shadow-xs" 
+                  : "border-slate-200 bg-white text-slate-700 hover:border-indigo-300 hover:text-indigo-600"
               }`} 
               key={item.id} 
               onClick={() => setActiveDevice(item.id)} 
@@ -64,23 +64,23 @@ export default function DeviceSetupGuide() {
       <article className="mx-auto max-w-[1000px] rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-xs">
         {/* Device Header */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 border-b border-slate-100 pb-6 mb-8">
-          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-600 shrink-0">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600 shrink-0">
             <DeviceIcon className="h-7 w-7" />
           </div>
           <div>
             <h3 className="text-2xl font-bold text-slate-900">{device.title}</h3>
             <p className="mt-1 text-xs sm:text-sm text-slate-600">
-              Follow these simple steps to configure your {device.label} for <strong className="text-slate-900">Reflexsat IPTV</strong>.
+              Follow these simple steps to configure your {device.label} for <strong className="text-slate-900">OREXETV</strong>.
             </p>
           </div>
         </div>
         
         {/* Important Note Box */}
         {device.note && (
-          <div className="mb-8 rounded-2xl border border-blue-200/80 bg-blue-50/60 p-5 flex items-start gap-3.5">
-            <HelpCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
+          <div className="mb-8 rounded-2xl border border-indigo-200/80 bg-indigo-50/60 p-5 flex items-start gap-3.5">
+            <HelpCircle className="h-5 w-5 text-indigo-600 shrink-0 mt-0.5" />
             <div>
-              <h4 className="font-bold text-xs uppercase tracking-wider text-blue-800 mb-1">Recommended Player & Tip</h4>
+              <h4 className="font-bold text-xs uppercase tracking-wider text-indigo-800 mb-1">Recommended Player & Tip</h4>
               <p className="text-xs sm:text-sm leading-relaxed text-slate-700">{device.note}</p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function DeviceSetupGuide() {
         {/* Steps */}
         <div className="space-y-4">
           <div className="flex gap-4 p-5 rounded-2xl border border-slate-200 bg-slate-50/50">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-xs font-bold text-white">
               1
             </span>
             <div>
@@ -101,7 +101,7 @@ export default function DeviceSetupGuide() {
           </div>
 
           <div className="flex gap-4 p-5 rounded-2xl border border-slate-200 bg-slate-50/50">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-xs font-bold text-white">
               2
             </span>
             <div className="flex-1">
@@ -110,14 +110,14 @@ export default function DeviceSetupGuide() {
                 Open the application, choose &quot;Xtream Codes API&quot; or &quot;Load M3U Playlist&quot;, and enter your credentials from your welcome message.
               </p>
               <div className="mt-3 p-3 rounded-xl bg-white border border-slate-200 font-mono text-xs text-slate-700">
-                <span className="font-bold text-blue-600 mr-2">Server & Credentials:</span>
-                Provided in your Reflexsat welcome email / WhatsApp
+                <span className="font-bold text-indigo-600 mr-2">Server & Credentials:</span>
+                Provided in your OREXETV welcome email / WhatsApp
               </div>
             </div>
           </div>
 
           <div className="flex gap-4 p-5 rounded-2xl border border-slate-200 bg-slate-50/50">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-xs font-bold text-white">
               3
             </span>
             <div>
@@ -139,7 +139,7 @@ export default function DeviceSetupGuide() {
           {faqs.map((faq) => (
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs" key={faq.question}>
               <div className="flex items-start gap-3 mb-2">
-                <HelpCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                <HelpCircle className="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" />
                 <h3 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
                   {faq.question}
                 </h3>

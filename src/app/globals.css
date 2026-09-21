@@ -15,16 +15,16 @@
   --color-inverse-on-surface: #ffffff;
   --color-outline: #e2e8f0;
   --color-outline-variant: #cbd5e1;
-  --color-surface-tint: #2563eb;
-  --color-primary: #2563eb;
+  --color-surface-tint: #4f46e5;
+  --color-primary: #4f46e5;
   --color-on-primary: #ffffff;
-  --color-primary-container: #eff6ff;
-  --color-on-primary-container: #1e40af;
-  --color-inverse-primary: #93c5fd;
-  --color-secondary: #0ea5e9;
+  --color-primary-container: #eef2ff;
+  --color-on-primary-container: #3730a3;
+  --color-inverse-primary: #a5b4fc;
+  --color-secondary: #06b6d4;
   --color-on-secondary: #ffffff;
-  --color-secondary-container: #f0f9ff;
-  --color-on-secondary-container: #0369a1;
+  --color-secondary-container: #ecfeff;
+  --color-on-secondary-container: #0e7490;
   --color-tertiary: #10b981;
   --color-on-tertiary: #ffffff;
   --color-tertiary-container: #ecfdf5;
@@ -37,16 +37,16 @@
   --color-on-background: #0f172a;
   --color-surface-variant: #f8fafc;
 
-  /* Brand Colors - Reflexsat Sapphire & Slate Palette */
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
+  /* Brand Colors - OREXETV Electric Indigo & Cyber Cyan Palette */
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
 
-  --color-secondary-400: #38bdf8;
-  --color-secondary-500: #0ea5e9;
-  --color-secondary-600: #0284c7;
+  --color-secondary-400: #22d3ee;
+  --color-secondary-500: #06b6d4;
+  --color-secondary-600: #0891b2;
 
   --color-accent-400: #34d399;
   --color-accent-500: #10b981;
@@ -100,7 +100,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased selection:bg-blue-100 selection:text-blue-900;
+    @apply bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased selection:bg-indigo-100 selection:text-indigo-900;
   }
 }
 
@@ -123,26 +123,26 @@
     box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
   }
 
-  .btn-primary-reflex {
-    background: #2563eb;
+  .btn-primary-orexe {
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
     color: #ffffff;
     font-weight: 700;
     border-radius: 9999px;
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.28);
     transition: all 0.2s ease-in-out;
   }
 
-  .btn-primary-reflex:hover {
-    background: #1d4ed8;
-    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  .btn-primary-orexe:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.38);
     transform: translateY(-1px);
   }
 
-  .btn-primary-reflex:active {
+  .btn-primary-orexe:active {
     transform: translateY(0);
   }
 
-  .btn-secondary-reflex {
+  .btn-secondary-orexe {
     background: #ffffff;
     border: 1px solid #cbd5e1;
     color: #0f172a;
@@ -151,10 +151,10 @@
     transition: all 0.2s ease-in-out;
   }
 
-  .btn-secondary-reflex:hover {
+  .btn-secondary-orexe:hover {
     background: #f8fafc;
-    border-color: #94a3b8;
-    color: #0f172a;
+    border-color: #818cf8;
+    color: #4f46e5;
     transform: translateY(-1px);
   }
 
@@ -201,11 +201,11 @@
 
   .text-format-marketing mark,
   .text-format-marketing .text-highlight {
-    @apply bg-transparent text-blue-600 font-bold;
+    @apply bg-transparent text-indigo-600 font-bold;
   }
 
   .text-format-marketing .badge-text {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-blue-700;
+    @apply inline-flex items-center gap-1.5 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-indigo-700;
   }
 
   /* 2. BLOG & EDITORIAL PAGES (Blog listing, Article detail) */

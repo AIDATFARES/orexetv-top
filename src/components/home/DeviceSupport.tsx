@@ -35,9 +35,9 @@ export default function DeviceSupport() {
           <div className="w-full lg:flex-1 relative">
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 bg-slate-50 p-4 shadow-sm">
               <Image
-                src="/reflexsat-compatible-devices.webp"
-                alt="Reflexsat IPTV multi-device streaming compatibility for Firestick, Apple TV 4K, Smart TV, Android, iOS and PC"
-                title="Reflexsat IPTV Supported Streaming Devices & Platforms"
+                src="/orexetv-compatible-devices.webp"
+                alt="OREXETV multi-device streaming compatibility for Firestick, Apple TV 4K, Smart TV, Android, iOS and PC"
+                title="OREXETV Supported Streaming Devices & Platforms"
                 width={800}
                 height={500}
                 className="w-full h-auto object-cover rounded-2xl"
@@ -56,25 +56,25 @@ export default function DeviceSupport() {
           {/* Right Side: Information & Grid */}
           <div className="w-full lg:flex-1 space-y-6">
             <div>
-              <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 text-blue-700 font-bold text-xs tracking-wider uppercase mb-4 border border-blue-200/80">
+              <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-4 border border-indigo-200/80">
                 Universal Compatibility
               </span>
               <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-4">
-                Stream <span className="text-blue-600">Reflexsat IPTV</span> on Any Screen
+                Stream <span className="text-indigo-600">OREXETV</span> on Any Screen
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                Reflexsat IPTV is engineered to deliver fluid 4K streaming across all your household hardware.
+                OrexeTV is engineered to deliver fluid 4K streaming across all your household hardware.
                 Whether relaxing in the living room watching{" "}
-                <Link href="/channels" className="font-semibold text-blue-600 hover:underline">
+                <Link href="/channels" className="font-semibold text-indigo-600 hover:underline">
                   50,000+ live sports and movies
                 </Link>{" "}
                 or streaming on mobile devices, enjoy crystal-clear playback without hardware limitations.
                 Choose a{" "}
-                <Link href="/pricing" className="font-semibold text-blue-600 hover:underline">
+                <Link href="/pricing" className="font-semibold text-indigo-600 hover:underline">
                   multi-screen subscription plan
                 </Link>{" "}
                 to connect multiple rooms at once, or consult our{" "}
-                <Link href="/installation" className="font-semibold text-blue-600 hover:underline">
+                <Link href="/installation" className="font-semibold text-indigo-600 hover:underline">
                   step-by-step setup guides
                 </Link>
                 .
@@ -89,12 +89,12 @@ export default function DeviceSupport() {
                   <Link
                     key={idx}
                     href="/installation"
-                    className="p-4 rounded-xl border border-slate-200/80 bg-slate-50/50 hover:bg-white hover:border-blue-300 hover:shadow-xs transition-all block group"
+                    className="p-4 rounded-xl border border-slate-200/80 bg-slate-50/50 hover:bg-white hover:border-indigo-300 hover:shadow-xs transition-all block group"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-blue-100/80 text-blue-700 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-indigo-100/80 text-indigo-700 flex items-center justify-center mb-3 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                       <Icon size={20} strokeWidth={2} />
                     </div>
-                    <h3 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors text-sm mb-1">{d.title}</h3>
+                    <h3 className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-sm mb-1">{d.title}</h3>
                     <p className="text-slate-500 text-xs leading-relaxed">{d.desc}</p>
                   </Link>
                 );
@@ -104,13 +104,13 @@ export default function DeviceSupport() {
             <div className="pt-2 flex flex-col sm:flex-row items-center gap-4">
               <Link
                 href="/installation"
-                className="w-full sm:w-auto btn-primary-reflex py-3.5 px-7 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-center"
+                className="w-full sm:w-auto btn-primary-orexe py-3.5 px-7 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-center"
               >
                 View Step-by-Step Setup Guides &rarr;
               </Link>
               <Link
                 href="/channels"
-                className="w-full sm:w-auto text-xs sm:text-sm font-bold text-slate-600 hover:text-blue-600 transition-colors text-center"
+                className="w-full sm:w-auto text-xs sm:text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors text-center"
               >
                 Browse 50,000+ Channels
               </Link>

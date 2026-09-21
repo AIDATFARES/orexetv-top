@@ -19,36 +19,36 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
   if (!post) {
-    return { title: 'Post Not Found | Reflexsat IPTV' };
+    return { title: 'Post Not Found | OREXETV' };
   }
 
-  const imageUrl = post.coverImage || "/blog/reflexsat-blog-default.webp";
+  const imageUrl = post.coverImage || "/blog/orexetv-blog-default.webp";
 
   return {
-    title: `${post.title} | Reflexsat IPTV`,
+    title: `${post.title} | OREXETV`,
     description: post.description,
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
-      title: `${post.title} | Reflexsat IPTV`,
+      title: `${post.title} | OREXETV`,
       description: post.description,
-      url: `https://www.reflexsat-iptv4k.shop/blog/${post.slug}`,
-      siteName: "Reflexsat IPTV",
+      url: `https://www.orexetv.top/blog/${post.slug}`,
+      siteName: "OREXETV",
       type: "article",
       images: [
         {
           url: imageUrl,
           width: 1200,
           height: 675,
-          alt: `${post.title} - Reflexsat IPTV Streaming Guide`,
+          alt: `${post.title} - OREXETV Streaming Guide`,
           type: "image/jpeg",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | Reflexsat IPTV`,
+      title: `${post.title} | OREXETV`,
       description: post.description,
       images: [imageUrl],
     },
@@ -116,9 +116,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ol: ({ node, ...props }: any) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-slate-700 text-sm sm:text-base" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    a: ({ node, ...props }: any) => <a className="text-blue-600 hover:text-blue-800 underline underline-offset-2 font-semibold transition-colors" {...props} />,
+    a: ({ node, ...props }: any) => <a className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2 font-semibold transition-colors" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-blue-600 pl-4 py-1.5 mb-6 italic bg-blue-50/50 rounded-r text-slate-700" {...props} />,
+    blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-indigo-600 pl-4 py-1.5 mb-6 italic bg-indigo-50/50 rounded-r text-slate-700" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     table: ({ node, ...props }: any) => <div className="overflow-x-auto mb-8 border border-slate-200 rounded-xl"><table className="w-full text-left border-collapse text-xs sm:text-sm" {...props} /></div>,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -144,14 +144,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         />
       )}
 
-      <Link href="/blog" className="inline-flex items-center text-slate-600 hover:text-blue-600 mb-8 transition-colors group font-bold tracking-wider uppercase text-xs">
+      <Link href="/blog" className="inline-flex items-center text-slate-600 hover:text-indigo-600 mb-8 transition-colors group font-bold tracking-wider uppercase text-xs">
         <ArrowLeft className="w-4 h-4 mr-1.5 group-hover:-translate-x-1 transition-transform" />
         Back to All Articles
       </Link>
 
       <article className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 md:p-12 shadow-xs">
         <header className="mb-10 text-center">
-          <span className="inline-block px-3.5 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-blue-200">
+          <span className="inline-block px-3.5 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-indigo-200">
             {post.category}
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
@@ -169,8 +169,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={post.coverImage}
-              alt={`${post.title} - Reflexsat IPTV Streaming Guide`}
-              title={`${post.title} | Reflexsat IPTV`}
+              alt={`${post.title} - OREXETV Streaming Guide`}
+              title={`${post.title} | OREXETV`}
               className="w-full h-full object-cover"
             />
           </div>
@@ -215,20 +215,20 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((relPost) => (
                 <Link href={`/blog/${relPost.slug}`} key={relPost.id}>
-                  <article className="bg-white rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:border-blue-300 hover:shadow-md transition-all duration-200 h-full border border-slate-200">
+                  <article className="bg-white rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:border-indigo-300 hover:shadow-md transition-all duration-200 h-full border border-slate-200">
                     <div className="h-40 relative overflow-hidden shrink-0 bg-slate-100">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
-                        alt={`${relPost.title} - Reflexsat IPTV Guide`}
-                        title={`${relPost.title} | Reflexsat IPTV`}
+                        alt={`${relPost.title} - OREXETV Guide`}
+                        title={`${relPost.title} | OREXETV`}
                         loading="lazy"
-                        src={relPost.coverImage || "/blog/reflexsat-blog-default.webp"}
+                        src={relPost.coverImage || "/blog/orexetv-blog-default.webp"}
                       />
                     </div>
                     <div className="p-5 flex flex-col flex-grow">
-                      <span className="text-[10px] text-blue-600 font-bold tracking-wider uppercase mb-1.5">{relPost.category}</span>
-                      <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors leading-snug">
+                      <span className="text-[10px] text-indigo-600 font-bold tracking-wider uppercase mb-1.5">{relPost.category}</span>
+                      <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors leading-snug">
                         {relPost.title}
                       </h3>
                       <p className="text-xs text-slate-400 font-medium mt-auto">

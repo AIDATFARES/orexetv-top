@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Legal Disclaimer & DMCA Notice | Reflexsat IPTV",
-  description: "Legal Disclaimer and DMCA copyright infringement notice procedure for Reflexsat IPTV.",
+  title: "Legal Disclaimer & DMCA Notice | OREXETV",
+  description: "Legal Disclaimer and DMCA copyright infringement notice procedure for OREXETV.",
   alternates: {
     canonical: "/dmca",
   },
@@ -19,7 +19,7 @@ const sections = [
   {
     title: "Content Hosting & Architecture",
     content: [
-      "Reflexsat IPTV provides playlist management interfaces and account credentials. Reflexsat IPTV does not host, upload, archive, or broadcast media streams on its web servers. Channel streams originate from external media sources accessible across the public internet.",
+      "OREXETV provides playlist management interfaces and account credentials. OREXETV does not host, upload, archive, or broadcast media streams on its web servers. Channel streams originate from external media sources accessible across the public internet.",
     ],
   },
   {
@@ -41,7 +41,7 @@ const sections = [
       "A statement under penalty of perjury that the information in your notice is accurate.",
       "A physical or verifiable electronic signature of the copyright owner or authorized agent.",
     ],
-    after: <>Send all copyright notices to <a href="mailto:support@reflexsat-iptv4k.shop" className="text-blue-600 underline">support@reflexsat-iptv4k.shop</a> or via our <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/contact">Contact form</Link>. Verifiable claims will be processed swiftly.</>,
+    after: <>Send all copyright notices to <a href="mailto:support@orexetv.top" className="text-indigo-600 underline">support@orexetv.top</a> or via our <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/contact">Contact form</Link>. Verifiable claims will be processed swiftly.</>,
   },
 ];
 
@@ -50,26 +50,26 @@ export default function DmcaPage() {
     <main className="flex-grow px-5 pb-20 pt-16 sm:px-8 md:pt-20 text-format-legal bg-white">
       <article className="mx-auto max-w-4xl">
         <header className="border-b border-slate-200 pb-10 text-center mx-auto max-w-3xl">
-          <span className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 mb-4">
+          <span className="inline-flex rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-indigo-700 mb-4">
             Legal Compliance
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Legal Disclaimer &amp; <span className="text-blue-600">DMCA Notice</span>
+            Legal Disclaimer &amp; <span className="text-indigo-600">DMCA Notice</span>
           </h1>
-          <p className="mx-auto mt-3 text-xs text-slate-500">Reflexsat IPTV (www.reflexsat-iptv4k.shop)</p>
+          <p className="mx-auto mt-3 text-xs text-slate-500">OREXETV (www.orexetv.top)</p>
         </header>
 
         <div className="mt-10 space-y-8 text-sm sm:text-base leading-relaxed text-slate-600">
-          <div className="rounded-2xl border border-blue-200/80 bg-blue-50/50 p-6 text-slate-800">
+          <div className="rounded-2xl border border-indigo-200/80 bg-indigo-50/50 p-6 text-slate-800">
             <strong className="font-bold text-slate-900 block mb-1">Important Notice:</strong>
-            Reflexsat IPTV provides playlist management software and secure account provisioning. We do not host, store, or transmit proprietary media files on our web servers.
+            OREXETV provides playlist management software and secure account provisioning. We do not host, store, or transmit proprietary media files on our web servers.
           </div>
 
           {sections.map((section, index) => (
             <section key={section.title}>
               <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">{index + 1}. {section.title}</h2>
               {section.content.map((paragraph, i) => <p className="mt-2" key={i}>{paragraph}</p>)}
-              {section.items && <ul className="mt-3 list-disc space-y-1.5 pl-6 marker:text-blue-600">{section.items.map((item, i) => <li key={i}>{item}</li>)}</ul>}
+              {section.items && <ul className="mt-3 list-disc space-y-1.5 pl-6 marker:text-indigo-600">{section.items.map((item, i) => <li key={i}>{item}</li>)}</ul>}
               {section.after && <p className="mt-3 text-slate-700 font-medium">{section.after}</p>}
             </section>
           ))}
@@ -77,7 +77,7 @@ export default function DmcaPage() {
           <section>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">5. Contact Support</h2>
             <p className="mt-2">
-              For any legal or technical compliance inquiries, email <a href="mailto:support@reflexsat-iptv4k.shop" className="text-blue-600 font-semibold underline">support@reflexsat-iptv4k.shop</a> or visit our <Link className="font-semibold text-blue-600 hover:text-blue-800" href="/contact">contact page</Link>.
+              For any legal or technical compliance inquiries, email <a href="mailto:support@orexetv.top" className="text-indigo-600 font-semibold underline">support@orexetv.top</a> or visit our <Link className="font-semibold text-indigo-600 hover:text-indigo-800" href="/contact">contact page</Link>.
             </p>
           </section>
         </div>

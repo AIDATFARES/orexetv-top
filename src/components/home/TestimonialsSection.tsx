@@ -15,9 +15,9 @@ const reviewImages = [
 
 const metrics = [
   { icon: Star, value: "4.9 / 5.0", label: "Average rating", tone: "text-amber-500" },
-  { icon: Users, value: "14K+", label: "Happy customers", tone: "text-blue-600" },
-  { icon: Tv, value: "50K+", label: "Live channels", tone: "text-blue-600" },
-  { icon: Globe2, value: "80+", label: "Countries supported", tone: "text-blue-600" },
+  { icon: Users, value: "14K+", label: "Happy customers", tone: "text-indigo-600" },
+  { icon: Tv, value: "50K+", label: "Live channels", tone: "text-indigo-600" },
+  { icon: Globe2, value: "80+", label: "Countries supported", tone: "text-indigo-600" },
   { icon: RefreshCw, value: "94%", label: "Renewal rate", tone: "text-emerald-500" },
 ];
 
@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
             Trusted by Thousands of Cord-Cutters Worldwide
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 leading-relaxed">
-            Read verified feedback from our global streaming community. Discover why Reflexsat IPTV is recommended for buffer-free live sports, 4K movies, and reliable international feeds.
+            Read verified feedback from our global streaming community. Discover why OREXETV is recommended for buffer-free live sports, 4K movies, and reliable international feeds.
           </p>
         </div>
 
@@ -68,8 +68,8 @@ export default function TestimonialsSection() {
               >
                 <Image
                   src={`/reviews/${img}`}
-                  alt={`Reflexsat IPTV verified customer review ${index + 1} - 5-star subscriber satisfaction`}
-                  title={`Reflexsat IPTV Verified Review ${index + 1}`}
+                  alt={`OREXETV verified customer review ${index + 1} - 5-star subscriber satisfaction`}
+                  title={`OREXETV Verified Review ${index + 1}`}
                   fill
                   sizes="(max-width: 640px) 220px, 280px"
                   className="object-contain"
@@ -81,10 +81,10 @@ export default function TestimonialsSection() {
 
         <div className="mt-12 text-center">
           <a
-            href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20a%20free%20trial%20for%20Reflexsat%20IPTV."
+            href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20a%20free%20trial%20for%20OREXETV."
             target="_blank"
             rel="noreferrer"
-            className="btn-primary-reflex inline-flex items-center gap-2 px-8 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider"
+            className="btn-primary-orexe inline-flex items-center gap-2 px-8 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider"
           >
             <Trophy className="h-4 w-4" /> Request Free 24h Trial
           </a>

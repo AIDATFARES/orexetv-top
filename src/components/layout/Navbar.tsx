@@ -62,8 +62,8 @@ export default function Navbar() {
                 onClick={item.href === "/" ? handleLogoClick : undefined}
                 className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-150 ${
                   isActive
-                    ? "bg-blue-600 text-white shadow-sm"
-                    : "text-slate-600 hover:text-blue-600 hover:bg-white"
+                    ? "bg-indigo-600 text-white shadow-sm"
+                    : "text-slate-600 hover:text-indigo-600 hover:bg-white"
                 }`}
               >
                 {item.label}
@@ -76,12 +76,12 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <Link
             href="/pricing"
-            className="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-slate-700 hover:text-blue-600 hover:bg-slate-50 border border-slate-200 transition-all"
+            className="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-slate-700 hover:text-indigo-600 hover:bg-slate-50 border border-slate-200 transition-all"
           >
             View Plans
           </Link>
           <a
-            href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20Reflexsat%20IPTV."
+            href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20OREXETV."
             target="_blank"
             rel="noreferrer"
             className="btn-whatsapp-clean px-5 py-2.5 text-xs uppercase tracking-wider font-bold inline-flex items-center gap-2"
@@ -116,7 +116,7 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`px-3 py-2 rounded-lg text-sm transition-colors ${
                     isActive
-                      ? "bg-blue-50 text-blue-600 font-bold"
+                      ? "bg-indigo-50 text-indigo-600 font-bold"
                       : "text-slate-700 hover:bg-slate-50"
                   }`}
                 >
@@ -134,7 +134,7 @@ export default function Navbar() {
           </nav>
           <div className="pt-3 border-t border-slate-100 flex flex-col gap-2.5">
             <a
-              href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20Reflexsat%20IPTV."
+              href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20OREXETV."
               target="_blank"
               rel="noreferrer"
               className="btn-whatsapp-clean text-center py-3 text-sm flex items-center justify-center gap-2"

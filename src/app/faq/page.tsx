@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, CircleHelp, Clock3, CreditCard, Mail, MessageCircle, Send, Settings2, UserRound } from "lucide-react";
 
-type Category = "About Reflexsat" | "Setup & streaming" | "Plans & access" | "Payments & support";
+type Category = "About OREXETV" | "Setup & streaming" | "Plans & access" | "Payments & support";
 
 type FAQItem = {
   category: Category;
@@ -13,7 +13,7 @@ type FAQItem = {
 };
 
 const categories: { label: Category; icon: typeof CircleHelp }[] = [
-  { label: "About Reflexsat", icon: CircleHelp },
+  { label: "About OREXETV", icon: CircleHelp },
   { label: "Setup & streaming", icon: Settings2 },
   { label: "Plans & access", icon: UserRound },
   { label: "Payments & support", icon: CreditCard },
@@ -21,68 +21,68 @@ const categories: { label: Category; icon: typeof CircleHelp }[] = [
 
 const faqs: FAQItem[] = [
   {
-    category: "About Reflexsat",
-    question: "1. What is Reflexsat IPTV?",
+    category: "About OREXETV",
+    question: "1. What is OREXETV?",
     answer: (
       <>
-        Reflexsat IPTV is a satellite-grade streaming service providing live TV channels, VOD movies, TV series, and sports channels in uncompressed 4K and Full HD quality. Explore our{" "}
-        <Link href="/channels" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">live TV channels</Link> and{" "}
-        <Link href="/pricing" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">subscription plans</Link>.
+        OREXETV (also written as Orexetv or OrexeTV) is a high-performance streaming service providing live TV channels, VOD movies, TV series, and sports channels in uncompressed 4K and Full HD quality. Explore our{" "}
+        <Link href="/channels" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">live TV channels</Link> and{" "}
+        <Link href="/pricing" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">subscription plans</Link>.
       </>
     ),
   },
   {
-    category: "About Reflexsat",
-    question: "2. Is Reflexsat IPTV compatible worldwide?",
+    category: "About OREXETV",
+    question: "2. Is OREXETV compatible worldwide?",
     answer: (
       <>
-        Yes. Reflexsat IPTV servers are distributed globally with load-balancing nodes, allowing seamless high-speed streaming anywhere in the world on any standard internet connection.
+        Yes. OREXETV servers are distributed globally with load-balancing nodes, allowing seamless high-speed streaming anywhere in the world on any standard internet connection.
       </>
     ),
   },
   {
-    category: "About Reflexsat",
-    question: "3. What channels and content are included with Reflexsat IPTV?",
+    category: "About OREXETV",
+    question: "3. What channels and content are included with OREXETV?",
     answer: (
       <>
-        Reflexsat IPTV features over 50,000 live channels covering sports, news, documentaries, and entertainment, along with 200,000+ regularly updated movies and series on demand. Check our <Link href="/channels" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">full channels catalog</Link>.
+        OREXETV features over 50,000 live channels covering sports, news, documentaries, and entertainment, along with 200,000+ regularly updated movies and series on demand. Check our <Link href="/channels" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">full channels catalog</Link>.
       </>
     ),
   },
   {
-    category: "About Reflexsat",
-    question: "4. Can I watch live sports and PPV events on Reflexsat IPTV?",
+    category: "About OREXETV",
+    question: "4. Can I watch live sports and PPV events on OREXETV?",
     answer: (
       <>
-        Yes. Reflexsat IPTV includes extensive 60 FPS sports coverage for Champions League, Premier League, NFL, NBA, UFC PPV, Formula 1, and global tournaments. Explore our <Link href="/channels" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">sports channels</Link>.
+        Yes. OREXETV includes extensive 60 FPS sports coverage for Champions League, Premier League, NFL, NBA, UFC PPV, Formula 1, and global tournaments. Explore our <Link href="/channels" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">sports channels</Link>.
       </>
     ),
   },
   {
-    category: "About Reflexsat",
+    category: "About OREXETV",
     question: "5. Which devices are compatible?",
     answer: (
       <>
-        Reflexsat IPTV works with compatible player apps on Firestick, Smart TVs (Samsung Tizen, LG webOS, Android TV), Apple TV, smartphones, tablets, and Windows/Mac PCs. Follow our <Link href="/installation" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">installation guides</Link>.
+        OREXETV works with compatible player apps on Firestick, Smart TVs (Samsung Tizen, LG webOS, Android TV), Apple TV, smartphones, tablets, and Windows/Mac PCs. Follow our <Link href="/installation" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">installation guides</Link>.
       </>
     ),
   },
   {
     category: "Setup & streaming",
-    question: "1. How do I install Reflexsat IPTV on my device?",
+    question: "1. How do I install OREXETV on my device?",
     answer: (
       <>
-        Install a player such as TiviMate or IPTV Smarters Pro from your device&apos;s app store. Then enter the Xtream Codes API credentials or M3U URL sent to your WhatsApp and email. View our <Link href="/installation" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">step-by-step guides</Link>.
+        Install a player such as TiviMate or IPTV Smarters Pro from your device&apos;s app store. Then enter the Xtream Codes API credentials or M3U URL sent to your WhatsApp and email. View our <Link href="/installation" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">step-by-step guides</Link>.
       </>
     ),
   },
   {
     category: "Setup & streaming",
-    question: "2. Can I use Reflexsat IPTV on a Smart TV?",
+    question: "2. Can I use OREXETV on a Smart TV?",
     answer: (
       <>
-        Yes. Reflexsat IPTV works smoothly on Samsung, LG, Sony, TCL, and Android TVs using players like IBO Player, Smart IPTV, or IPTV Smarters Pro. Follow our{" "}
-        <Link href="/installation" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        Yes. OREXETV works smoothly on Samsung, LG, Sony, TCL, and Android TVs using players like IBO Player, Smart IPTV, or IPTV Smarters Pro. Follow our{" "}
+        <Link href="/installation" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
           Smart TV installation tutorial
         </Link>
         .
@@ -95,7 +95,7 @@ const faqs: FAQItem[] = [
     answer: (
       <>
         We recommend a connection speed of 15 Mbps for HD channels and 30 Mbps or higher for native 4K UHD and live 60 FPS sports feeds. Ethernet or 5GHz Wi-Fi is best. Check our{" "}
-        <Link href="/installation" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        <Link href="/installation" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
           setup recommendations
         </Link>
         .
@@ -108,7 +108,7 @@ const faqs: FAQItem[] = [
     answer: (
       <>
         Our Anti-Freeze 10.0 technology utilizes redundant cloud server clusters that automatically route your connection through optimal nodes, avoiding network congestion. Learn more about{" "}
-        <Link href="/how-it-works" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        <Link href="/how-it-works" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
           how our streaming servers work
         </Link>
         .
@@ -117,11 +117,11 @@ const faqs: FAQItem[] = [
   },
   {
     category: "Setup & streaming",
-    question: "5. Do I need a VPN to stream Reflexsat IPTV?",
+    question: "5. Do I need a VPN to stream OREXETV?",
     answer: (
       <>
         A VPN is not mandatory. Our streams are encrypted and private. However, if your local ISP throttles streaming bandwidth during peak sports events, a VPN can ensure full speeds. For advice, reach out to our{" "}
-        <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        <Link href="/contact" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
           support specialists
         </Link>
         .
@@ -134,11 +134,11 @@ const faqs: FAQItem[] = [
     answer: (
       <>
         Zero contracts and zero surprise charges. All plans are prepaid. View our{" "}
-        <Link href="/pricing" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        <Link href="/pricing" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
           pricing page
         </Link>{" "}
         for clear options and read our{" "}
-        <Link href="/refund-policy" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        <Link href="/refund-policy" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
           refund policy
         </Link>
         .
@@ -150,7 +150,7 @@ const faqs: FAQItem[] = [
     question: "2. Can I stream on multiple screens simultaneously?",
     answer: (
       <>
-        Yes! When selecting your plan on our <Link href="/pricing" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">pricing page</Link>, you can select 1, 2, or 3 device connections.
+        Yes! When selecting your plan on our <Link href="/pricing" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">pricing page</Link>, you can select 1, 2, or 3 device connections.
       </>
     ),
   },
@@ -160,19 +160,19 @@ const faqs: FAQItem[] = [
     answer: (
       <>
         Your welcome email and WhatsApp message include both M3U playlist URLs and Xtream Codes credentials (Server URL, username, password). Follow our{" "}
-        <Link href="/installation" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        <Link href="/installation" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
           setup instructions
-        </Link>{" "}
+        </Link>
         to input them into your favorite player.
       </>
     ),
   },
   {
     category: "Payments & support",
-    question: "1. Does Reflexsat IPTV offer a free trial?",
+    question: "1. Does OREXETV offer a free trial?",
     answer: (
       <>
-        Yes, we offer a <a href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20Reflexsat%20IPTV." target="_blank" rel="noreferrer" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">free 24-hour trial</a> so you can verify our quality before subscribing to a <Link href="/pricing" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">full plan</Link>.
+        Yes, we offer a <a href="https://wa.me/447882781998?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20OREXETV." target="_blank" rel="noreferrer" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">free 24-hour trial</a> so you can verify our quality before subscribing to a <Link href="/pricing" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">full plan</Link>.
       </>
     ),
   },
@@ -181,7 +181,7 @@ const faqs: FAQItem[] = [
     question: "2. Which payment methods are accepted?",
     answer: (
       <>
-        We accept Credit and Debit cards, PayPal, and Cryptocurrencies (Bitcoin, USDT). For custom payment inquiries, reach out to our <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">support team</Link>.
+        We accept Credit and Debit cards, PayPal, and Cryptocurrencies (Bitcoin, USDT). For custom payment inquiries, reach out to our <Link href="/contact" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">support team</Link>.
       </>
     ),
   },
@@ -190,7 +190,7 @@ const faqs: FAQItem[] = [
     question: "3. How fast is activation after ordering?",
     answer: (
       <>
-        Activation is instant and automated. Your account credentials are created and delivered to your WhatsApp and email within minutes of order completion. Follow our <Link href="/installation" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">quick start guides</Link> to start watching.
+        Activation is instant and automated. Your account credentials are created and delivered to your WhatsApp and email within minutes of order completion. Follow our <Link href="/installation" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">quick start guides</Link> to start watching.
       </>
     ),
   },
@@ -209,7 +209,7 @@ export default function FAQ() {
     const email = String(formData.get("email") || "").trim();
     const subject = String(formData.get("subject") || "General support").trim();
     const message = String(formData.get("message") || "").trim();
-    const text = encodeURIComponent(`Hello Reflexsat IPTV support,\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`);
+    const text = encodeURIComponent(`Hello OREXETV support,\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`);
     window.open(`https://wa.me/447882781998?text=${text}`, "_blank", "noopener,noreferrer");
   }
 
@@ -217,14 +217,14 @@ export default function FAQ() {
     <main className="flex-grow px-4 sm:px-6 pb-20 pt-16 md:pt-20 bg-white text-slate-900">
       <div className="mx-auto max-w-[1140px]">
         <header className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
-          <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 border border-blue-200 text-blue-700 font-bold text-xs tracking-wider uppercase mb-4">
+          <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-4">
             Help & Knowledge Base
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Frequently Asked <span className="text-blue-600">Questions</span>
+            Frequently Asked <span className="text-indigo-600">Questions</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 leading-relaxed">
-            Find answers to common questions about Reflexsat IPTV subscriptions, device installation, stream performance, and billing.
+            Find answers to common questions about OREXETV subscriptions, device installation, stream performance, and billing.
           </p>
         </header>
 
@@ -234,7 +234,7 @@ export default function FAQ() {
             onClick={() => setSelectedCat("All")}
             className={`px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
               selectedCat === "All"
-                ? "bg-blue-600 text-white shadow-xs"
+                ? "bg-indigo-600 text-white shadow-xs"
                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
             }`}
           >
@@ -246,7 +246,7 @@ export default function FAQ() {
               onClick={() => setSelectedCat(c.label)}
               className={`px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
                 selectedCat === c.label
-                  ? "bg-blue-600 text-white shadow-xs"
+                  ? "bg-indigo-600 text-white shadow-xs"
                   : "bg-slate-100 text-slate-600 hover:bg-slate-200"
               }`}
             >
@@ -273,7 +273,7 @@ export default function FAQ() {
                   className="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 hover:bg-slate-50/50"
                 >
                   <span className="text-sm sm:text-base leading-snug">{faq.question.replace(/^\d+\.\s*/, '')}</span>
-                  <span className={`text-slate-400 shrink-0 ml-3 transition-transform duration-200 ${isOpen ? 'rotate-180 text-blue-600' : ''}`}>
+                  <span className={`text-slate-400 shrink-0 ml-3 transition-transform duration-200 ${isOpen ? 'rotate-180 text-indigo-600' : ''}`}>
                     <ChevronDown className="w-5 h-5" />
                   </span>
                 </button>
@@ -299,12 +299,12 @@ export default function FAQ() {
           </header>
 
           <div className="grid gap-6 sm:grid-cols-3 max-w-3xl mx-auto">
-            <a className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center hover:bg-white hover:border-blue-300 transition-all" href="mailto:support@reflexsat-iptv4k.shop">
-              <span className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-3"><Mail className="h-5 w-5" /></span>
+            <a className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center hover:bg-white hover:border-indigo-300 transition-all" href="mailto:support@orexetv.top">
+              <span className="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-3"><Mail className="h-5 w-5" /></span>
               <span className="font-bold text-sm text-slate-900">Email Us</span>
-              <span className="text-xs text-blue-600 font-semibold mt-1 break-all">support@reflexsat-iptv4k.shop</span>
+              <span className="text-xs text-indigo-600 font-semibold mt-1 break-all">support@orexetv.top</span>
             </a>
-            <a className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center hover:bg-white hover:border-emerald-300 transition-all" href="https://wa.me/447882781998?text=Hello%20Reflexsat%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
+            <a className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center hover:bg-white hover:border-emerald-300 transition-all" href="https://wa.me/447882781998?text=Hello%20OREXETV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
               <span className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-3"><MessageCircle className="h-5 w-5" /></span>
               <span className="font-bold text-sm text-slate-900">WhatsApp Desk</span>
               <span className="text-xs text-emerald-600 font-bold mt-1">Start Live Chat &rarr;</span>

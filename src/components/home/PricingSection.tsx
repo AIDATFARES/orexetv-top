@@ -21,7 +21,7 @@ type Plan = {
 };
 
 const commonFeatures: PlanFeature[] = [
-  { text: "Reflexsat IPTV subscription for {devices} Device{s}", included: true },
+  { text: "OREXETV subscription for {devices} Device{s}", included: true },
   { text: "Uncompressed Ultra HD & True 4K", included: true },
   { text: "50,000+ Premium Live Channels", included: true },
   { text: "200,000+ VODs (Updated Daily)", included: true },
@@ -71,7 +71,7 @@ export default function PricingSection() {
 
   function handleOrder(plan: Plan) {
     const text = encodeURIComponent(
-      `Hello! I would like to order the Reflexsat IPTV ${plan.name} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
+      `Hello! I would like to order the OREXETV ${plan.name} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
     );
     window.open(`https://wa.me/447882781998?text=${text}`, "_blank", "noopener,noreferrer");
   }
@@ -81,30 +81,30 @@ export default function PricingSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Header */}
         <header className="mx-auto max-w-3xl text-center mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200/80 px-4 py-1 mb-5">
-            <Gift className="h-4 w-4 text-blue-600" />
-            <span className="text-[11px] font-bold text-blue-700 tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 border border-indigo-200/80 px-4 py-1 mb-5">
+            <Gift className="h-4 w-4 text-indigo-600" />
+            <span className="text-[11px] font-bold text-indigo-700 tracking-wider uppercase">
               TRANSPARENT PRICING · NO HIDDEN FEES
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-            Choose Your <span className="text-blue-600">Reflexsat IPTV</span> Plan
+            Choose Your <span className="text-indigo-600">OREXETV</span> Plan
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto">
-            Select your subscription duration with zero contract commitments. Enjoy bigger savings on longer plans,
+            Select your Orexetv subscription duration with zero contract commitments. Enjoy bigger savings on longer plans,
             with instant credentials delivery directly to your WhatsApp and email.
           </p>
           <p className="mt-2 text-xs sm:text-sm text-slate-500 max-w-2xl mx-auto">
             Browse our{" "}
-            <Link href="/channels" className="font-semibold text-blue-600 hover:text-blue-800 underline">
+            <Link href="/channels" className="font-semibold text-indigo-600 hover:text-indigo-800 underline">
               50,000+ live channels lineup
             </Link>
             , view our{" "}
-            <Link href="/installation" className="font-semibold text-blue-600 hover:text-blue-800 underline">
+            <Link href="/installation" className="font-semibold text-indigo-600 hover:text-indigo-800 underline">
               device installation guides
             </Link>
             , or explore our{" "}
-            <Link href="/reseller" className="font-semibold text-blue-600 hover:text-blue-800 underline">
+            <Link href="/reseller" className="font-semibold text-indigo-600 hover:text-indigo-800 underline">
               IPTV reseller credits
             </Link>
             .
@@ -125,7 +125,7 @@ export default function PricingSection() {
                   type="button"
                   className={`py-2.5 px-2 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide transition-all text-center whitespace-nowrap ${
                     devices === num
-                      ? "bg-blue-600 text-white shadow-xs"
+                      ? "bg-indigo-600 text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
                   }`}
                 >
@@ -145,13 +145,13 @@ export default function PricingSection() {
                 key={plan.id}
                 className={`relative flex flex-col rounded-2xl bg-white p-7 sm:p-8 transition-all duration-200 ${
                   isPopular
-                    ? "border-2 border-blue-600 shadow-xl md:-translate-y-2"
+                    ? "border-2 border-indigo-600 shadow-xl md:-translate-y-2"
                     : "border border-slate-200 shadow-sm hover:border-slate-300 hover:shadow-md"
                 }`}
               >
                 {isPopular && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-600 px-4 py-1 text-[11px] font-extrabold uppercase tracking-widest text-white shadow-sm">
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-indigo-600 px-4 py-1 text-[11px] font-extrabold uppercase tracking-widest text-white shadow-sm">
                       <Sparkles className="w-3.5 h-3.5" />
                       {plan.badge}
                     </span>
@@ -189,8 +189,8 @@ export default function PricingSection() {
                   onClick={() => handleOrder(plan)}
                   className={`w-full py-3.5 px-6 rounded-full text-xs sm:text-sm font-extrabold uppercase tracking-wider transition-all duration-200 ${
                     isPopular
-                      ? "btn-primary-reflex"
-                      : "btn-secondary-reflex"
+                      ? "btn-primary-orexe"
+                      : "btn-secondary-orexe"
                   }`}
                 >
                   {plan.buttonText}
@@ -223,10 +223,10 @@ export default function PricingSection() {
         {/* Guarantee Banner */}
         <div className="mt-12 text-center text-xs sm:text-sm text-slate-500">
           <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-medium">
-            <ShieldCheck className="w-4 h-4 text-blue-600 inline" />
+            <ShieldCheck className="w-4 h-4 text-indigo-600 inline" />
             <span>Instant automated setup · Works on all IPTV players · 24/7 VIP WhatsApp Assistance ·</span>
-            <span>Backed by our <Link href="/refund-policy" className="font-semibold text-blue-600 hover:underline">Refund Policy</Link> ·</span>
-            <span>Have questions? Read our <Link href="/faq" className="font-semibold text-blue-600 hover:underline">FAQ</Link> or <Link href="/contact" className="font-semibold text-blue-600 hover:underline">Contact Support</Link></span>
+            <span>Backed by our <Link href="/refund-policy" className="font-semibold text-indigo-600 hover:underline">Refund Policy</Link> ·</span>
+            <span>Have questions? Read our <Link href="/faq" className="font-semibold text-indigo-600 hover:underline">FAQ</Link> or <Link href="/contact" className="font-semibold text-indigo-600 hover:underline">Contact Support</Link></span>
           </p>
         </div>
       </div>
