@@ -5,13 +5,13 @@ import TopFeatureBar from "./TopFeatureBar";
 export default function HeroSection() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-slate-50/50 pt-28 pb-20 sm:pt-36 sm:pb-24 border-b border-slate-200/70">
+      <section className="relative overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-slate-50/50 pt-6 pb-16 sm:pt-10 sm:pb-20 border-b border-slate-200/70">
         {/* Subtle decorative background grid */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f015_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f015_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
 
         <div className="relative z-10 w-full max-w-[1240px] mx-auto px-5 sm:px-8 flex flex-col items-center text-center">
           {/* Top Trust Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200/80 bg-indigo-50/90 px-4 py-1.5 mb-8 shadow-xs">
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200/80 bg-indigo-50/90 px-4 py-1.5 mb-6 shadow-xs">
             <Sparkles className="w-4 h-4 text-indigo-600" />
             <span className="text-xs font-bold text-indigo-700 tracking-wider uppercase">
               Official 2026 Edition · OREXETV Ultra 4K · Anti-Freeze 10.0

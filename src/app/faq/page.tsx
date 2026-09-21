@@ -214,7 +214,7 @@ export default function FAQ() {
   }
 
   return (
-    <main className="flex-grow px-4 sm:px-6 pb-20 pt-16 md:pt-20 bg-white text-slate-900">
+    <main className="flex-grow px-4 sm:px-6 pb-20 pt-8 sm:pt-12 bg-white text-slate-900">
       <div className="mx-auto max-w-[1140px]">
         <header className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
           <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-4">

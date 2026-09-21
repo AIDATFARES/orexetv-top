@@ -9,7 +9,7 @@ export default function Blog() {
   const gridPosts = blogPosts.slice(1);
 
   return (
-    <main className="flex-grow pt-24 pb-24 px-5 sm:px-8 max-w-[1300px] mx-auto w-full relative z-10 bg-white">
+    <main className="flex-grow pt-8 sm:pt-12 pb-20 px-5 sm:px-8 max-w-[1300px] mx-auto w-full relative z-10 bg-white">
       {/* Header */}
       <header className="mb-14 text-center md:text-left">
         <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-4">

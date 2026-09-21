@@ -29,7 +29,7 @@ export default function HowItWorksPage() {
   return (
     <main className="flex-col flex min-h-screen bg-white">
       {/* Page Hero Header */}
-      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 border-b border-slate-200 bg-slate-50/50">
+      <section className="relative pt-8 pb-12 md:pt-14 md:pb-16 border-b border-slate-200 bg-slate-50/50">
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <span className="inline-block py-1.5 px-4 rounded-full bg-indigo-50 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-4 border border-indigo-200">
             Simple 3-Step Setup

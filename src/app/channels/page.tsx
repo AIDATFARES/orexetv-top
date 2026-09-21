@@ -94,7 +94,7 @@ const categoryCards = [
 
 export default function ChannelsPage() {
   return (
-    <main className="min-h-screen bg-white text-slate-900 pt-24 pb-24 relative overflow-hidden">
+    <main className="min-h-screen bg-white text-slate-900 pt-8 sm:pt-12 pb-20 relative overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-10 relative z-10">
         
         {/* Header Banner */}

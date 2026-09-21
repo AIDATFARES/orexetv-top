@@ -136,7 +136,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   };
 
   return (
-    <main className="flex-grow pt-24 pb-24 px-5 sm:px-8 max-w-[1000px] mx-auto w-full relative z-10 bg-white">
+    <main className="flex-grow pt-8 sm:pt-12 pb-20 px-5 sm:px-8 max-w-[1000px] mx-auto w-full relative z-10 bg-white">
       {faqJsonLd && (
         <script
           type="application/ld+json"
